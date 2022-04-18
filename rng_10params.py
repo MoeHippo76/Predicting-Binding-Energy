@@ -35,7 +35,7 @@ eVa,eVe = la.eig(S)
 
 L = np.diag(eVa)
 L_2 = np.sqrt(L)
-T = np.matmul(eVe,L_2)
+T = eVe @ L_2
 
 def random_params():
     X = np.random.normal(0,1,10).T
@@ -65,6 +65,7 @@ if __name__ == "__main__":
     List = []
     for i in range(100):
          List.append(random_params())
+    print(List)
         
         
     
