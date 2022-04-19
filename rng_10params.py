@@ -39,17 +39,7 @@ T = eVe @ L_2
 
 def random_params():
     X = np.random.normal(0,1,10).T
-    
-    
-    #rerolling to make sure X[3] and X[2] are within allowed bounds.
-    '''
-    while(X[3]*C[3] + X_mean[3] < 0.9):
-        X[3] = np.random.normal(0,1,1)[0]
-    while(X[2]*C[2] + X_mean[2] < 40):
-        X[2] = np.random.normal(0,1,1)[0] 
-    '''
-        
-    
+
     Y = (T @ X) + X_mean
     return Y
 
@@ -64,8 +54,14 @@ def test_val(Y):
 if __name__ == "__main__":
     List = []
     for i in range(100):
-         List.append(random_params())
-    print(List)
-        
+        Y = random_params()
+        List.append(Y)
+    for i in range(10):
+        x = []
+        for j in range(100):
+            x.append(List[j][i])
+        plt.hist(x,label = str(i+1))
+    plt.legend()
+    plt.show()
         
     
