@@ -6,8 +6,8 @@ Created on Sun Apr 17 12:32:29 2022
 """
 
 import numpy as np
-from numpy import linalg as la
 from  matplotlib import pyplot as plt
+la = np.linalg
 
 #Correlation Matrix
 R = np.array([[    1,-0.35,-0.14, 0.32,-0.25,-0.06,-0.32,-0.33,-0.14, 0.05],
@@ -77,6 +77,6 @@ if __name__ == "__main__":
         Y = random_params()
         List.append(Y)
     #plot_distro()
-    plot_relation(1,2,List)
+    plot_relation(0,1,List)
         
     
