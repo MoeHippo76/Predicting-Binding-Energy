@@ -50,12 +50,7 @@ def test_val(Y):
           (Y[3] >= 0.9 and Y[3] <= 1.5)]
     return t
 
-
-if __name__ == "__main__":
-    List = []
-    for i in range(100):
-        Y = random_params()
-        List.append(Y)
+def plot_distro():
     for i in range(10):
         x = []
         for j in range(100):
@@ -63,5 +58,25 @@ if __name__ == "__main__":
         plt.hist(x,label = str(i+1))
     plt.legend()
     plt.show()
+
+def plot_relation(par1,par2,all_draws):
+    P1 = []
+    P2 = []
+    for draw in all_draws:
+        P1.append(draw[par1])
+        P2.append(draw[par2])
+    plt.scatter(P1,P2)
+    plt.ylabel("Variable " + str(par2+1))
+    plt.xlabel("Variable " + str(par1+1))   
+    plt.show() 
+
+
+if __name__ == "__main__":
+    List = []
+    for i in range(100):
+        Y = random_params()
+        List.append(Y)
+    #plot_distro()
+    plot_relation(1,2,List)
         
     
