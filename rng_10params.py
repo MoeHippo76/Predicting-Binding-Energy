@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 """
 Created on Sun Apr 17 12:32:29 2022
 
@@ -50,12 +49,12 @@ def test_val(Y):
           (Y[3] >= 0.9 and Y[3] <= 1.5)]
     return t
 
-def plot_distro():
-    for i in range(10):
+def plot_distro(N,bins,Events,dimen = 1):
+    for i in range(dimen):
         x = []
-        for j in range(100):
-            x.append(List[j][i])
-        plt.hist(x,label = str(i+1))
+        for j in range(N):
+            x.append(Events[j][i])
+        plt.hist(x,bins,label = str(i+1))
     plt.legend()
     plt.show()
 
@@ -70,13 +69,14 @@ def plot_relation(par1,par2,all_draws):
     plt.xlabel("Variable " + str(par1+1))   
     plt.show() 
 
-
-if __name__ == "__main__":
+def Monte_Carlo_events(N,bins = 0,vis = False):
     List = []
-    for i in range(100):
+    for i in range(N):
         Y = random_params()
         List.append(Y)
-    #plot_distro()
-    plot_relation(0,1,List)
-        
-    
+    if vis == True:    
+        plot_distro(N,bins,List,2)
+    return List    
+
+if __name__ == "__main__":
+    Monte_Carlo_events(10000,10000,True)    
