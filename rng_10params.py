@@ -69,14 +69,14 @@ def plot_relation(par1,par2,all_draws):
     plt.xlabel("Variable " + str(par1+1))   
     plt.show() 
 
-def Monte_Carlo_events(N,bins = 0,vis = False):
+def Monte_Carlo_events(N,bins = 0,vis = False,dimens = 10):
     List = []
     for i in range(N):
         Y = random_params()
         List.append(Y)
     if vis == True:    
-        plot_distro(N,bins,List,2)
+        plot_distro(N,bins,List,dimens)
     return List    
 
 if __name__ == "__main__":
-    Monte_Carlo_events(10000,10000,True)    
+    Monte_Carlo_events(10000,10000,True,1)    
