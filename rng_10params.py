@@ -73,10 +73,11 @@ def Monte_Carlo_events(N,bins = 0,vis = False,dimens = 10):
     List = []
     for i in range(N):
         Y = random_params()
-        List.append(Y)
+        List.append(Y)   
     if vis == True:    
         plot_distro(N,bins,List,dimens)
+    
     return List    
 
 if __name__ == "__main__":
-    Monte_Carlo_events(10000,10000,True,1)    
+    Monte_Carlo_events(100000,100,True,10)    
