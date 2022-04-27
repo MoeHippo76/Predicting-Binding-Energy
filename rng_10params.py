@@ -6,6 +6,7 @@ Created on Sun Apr 17 12:32:29 2022
 
 import numpy as np
 from  matplotlib import pyplot as plt
+from matplotlib.gridspec import GridSpec
 la = np.linalg
 
 #Correlation Matrix
@@ -51,23 +52,36 @@ def test_val(Y):
 
 def plot_distro(N,bins,Events,dimen = 1):
     for i in range(dimen):
-        x = []
-        for j in range(N):
-            x.append(Events[j][i])
-        plt.hist(x,bins,label = str(i+1))
+        x = plot_distro_single(N,Events,i+1,bins)
+        plt.hist(x,bins,label = str(dimen))
     plt.legend()
     plt.show()
 
-def plot_relation(par1,par2,all_draws):
+def plot_distro_single(N,Events,dimen = 1,disp = False,bins = None):
+    x = []
+    for i in range(N):
+        x.append(Events[i][dimen-1])
+
+    if disp == True:
+        plt.hist(x,bins,label = str(dimen))
+        plt.legend()
+        plt.show()
+
+    return x
+
+def plot_relation(par1,par2,all_draws,disp = False):
     P1 = []
     P2 = []
     for draw in all_draws:
         P1.append(draw[par1])
         P2.append(draw[par2])
-    plt.scatter(P1,P2)
-    plt.ylabel("Variable " + str(par2+1))
-    plt.xlabel("Variable " + str(par1+1))   
-    plt.show() 
+    if disp == True:
+        plt.scatter(P1,P2)
+        plt.ylabel("Variable " + str(par2+1))
+        plt.xlabel("Variable " + str(par1+1))   
+        plt.show() 
+    
+    return P1,P2
 
 def Monte_Carlo_events(N,bins = 0,vis = False,dimens = 10):
     List = []
@@ -76,8 +90,34 @@ def Monte_Carlo_events(N,bins = 0,vis = False,dimens = 10):
         List.append(Y)   
     if vis == True:    
         plot_distro(N,bins,List,dimens)
-    
     return List    
 
+
 if __name__ == "__main__":
-    Monte_Carlo_events(100000,100,True,10)    
+    N = 100000
+    bins = 100
+    E = Monte_Carlo_events(N,bins,False,10)
+
+    n = 10
+    fig = plt.figure()
+    gs = GridSpec(n, n)
+
+    ax_scatters = np.array([])
+    ax_hists = np.array([])
+    for i in range(n):
+        for j in range(n):
+            if j > i:
+                pass
+            elif i == j:
+                ax_hist_var = fig.add_subplot(gs[i,j])
+                np.append(ax_hists,ax_hist_var)
+                x = plot_distro_single(N,E,i+1)
+                ax_hist_var.hist(x,bins)
+            else:
+                ax_scatter =  fig.add_subplot(gs[i, j])
+                np.append(ax_scatters,ax_scatter)
+                x,y = plot_relation(i,j,E)
+                ax_scatter.scatter(x,y,s=0.001)
+                
+
+    plt.show()
