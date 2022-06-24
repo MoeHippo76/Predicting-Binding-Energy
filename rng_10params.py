@@ -93,7 +93,7 @@ def Monte_Carlo_events(N,bins = 0,vis = False,dimens = 10):
     return List    
 
 
-if __name__ == "__main__":
+def Plot_correlation_graph():
     N = 100000
     bins = 100
     E = Monte_Carlo_events(N,bins,False,10)
@@ -121,3 +121,7 @@ if __name__ == "__main__":
                 
 
     plt.show()
+
+if __name__ == "__main__":
+    Y = random_params()
+    print(Y)
