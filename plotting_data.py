@@ -13,7 +13,8 @@ for line in lines:
     Energy.append(float(data[1]))
 
 
-plt.plot(Beta,Energy)
+plt.plot(Beta,Energy,label="DFT")
 plt.xlabel("Beta")
 plt.ylabel("Energy (MeV)")
+
 plt.show()
