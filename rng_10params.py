@@ -48,13 +48,6 @@ def random_params():
     Y = (T @ X) + X_mean
     return Y
 
-def test_val(Y):
-    t =  [(Y[0] >= 0.15 and Y[0] <= 0.17),
-          (Y[1] >= 28 and Y[1] <= 36),
-          (Y[2] >= 40 and Y[2] <= 100),
-          (Y[3] >= 0.9 and Y[3] <= 1.5)]
-    return t
-
 def plot_distro(N,bins,Events,dimen = 1):
     for i in range(dimen):
         x = plot_distro_single(N,Events,i+1,bins)
@@ -145,8 +138,8 @@ def write_parameters(p):
         filehandle.writelines(all_lines)
         filehandle.close()
 
-def save_params(params,index = None):
-    fout = open('/home/hammy/1_dft_8/Parameters', 'a')
+def save_params(params,destination,index = None):
+    fout = open(destination+'/Parameters', 'a')
     
     if index is None:
         string = ""
@@ -161,7 +154,10 @@ def save_params(params,index = None):
 
 def rename(index,destination):
     old = destination + "/dft_mesh.dat"
-    new = destination + "/dft_mesh_" + str(index) + ".dat" 
+    if index == 0:
+        new = destination + "/dft_mesh_default.dat"
+    else: 
+        new = destination + "/dft_mesh_" + str(index) + ".dat" 
     os.rename(old,new)
 
 def data_1_dft(default = False,destination = None):
@@ -169,7 +165,7 @@ def data_1_dft(default = False,destination = None):
     lines = []
     
     if default:
-        with open("/home/hammy/1_dft_8/dft_mesh_default.dat","r") as f:
+        with open(destination+"dft_mesh_default.dat","r") as f:
             lines = f.readlines()
             f.close()
     else:
@@ -205,23 +201,6 @@ def plot_bands(destination):
         x_list,y_list = np.array(data_1_dft(False,i+1,destination))
         plt.plot(x_list,y_list,color = 'red')
         
-    
-    ''' 
-
-    all_y = np.array(all_y).T
-    y_max = []
-    y_min = []
-    
-    for y in all_y:
-        y = np.sort(y)
-        y_max.append(y[len(y)-2])
-        y_min.append(y[1])
-
-     
-    plt.plot(x_plot,y_plot,'-k')
-    #plt.fill_between(x_plot,y_min, y_max)
-    plt.show()
-    '''
 
 def write_params_2_H(p):
     with open(r"/home/hammy/VSLAT/2_H/src/skyrme.f90", 'r') as fp:
@@ -245,7 +224,7 @@ def create_data(params,index,destination):
     write_parameters(params)
     #Running the boxes
     os.chdir('/home/hammy/VSLAT/1_dft')
-    subprocess.call("./run.sh -n 12 -z 12 -e 12 -t true",shell=True)
+    subprocess.call("./run.sh -n 12 -z 12 -e 8 -t true",shell=True)
     #copying grid data into a seperate folder
     shutil.copy("/home/hammy/VSLAT/1_dft/data/dft_mesh.dat",destination)
     #renaming the grid data.
@@ -302,55 +281,42 @@ def eval_params_confidence(event,factor):
             break
     return flag
 
+
 if __name__ == "__main__":
     
-    directory65 = '/home/hammy/1_dft_12/conf_65'
-    directory95 = '/home/hammy/1_dft_12/conf_95'
-    directory = '/home/hammy/1_dft_12/'
+    directory65 = '/home/hammy/1_dft_8/conf_65'
+    directory95 = '/home/hammy/1_dft_8conf_95'
+    directory = '/home/hammy/1_dft_8/'
     
     j = 0
     confidence_65 = []
-    confidence_95 = []
+    N = 30
+    
+    write_parameters(X_mean.T[4:])
+    create_data(X_mean.T[4:],0,directory)
 
-    create_data(X_mean,0,directory)
-
-    while j < 100:
+    while len(confidence_65) < N:
         event = random_params()[4:]
-        if eval_params_confidence(event,2):
-            save_params(event,j+1)
+        if eval_params_confidence(event,1):
+            save_params(event,directory,j+1)
+            confidence_65.append((j,event))
             j += 1
-            if eval_params_confidence(event,1):
-                confidence_65.append((j,event))
-            else:
-                confidence_95.append((j,event))
-
-    for i in range(2):
+    
+    for i in range(N):
         p = confidence_65[i][1]
         j = confidence_65[i][0]
-        print("65 percent",p,j)
-        create_data(p,j,directory65)
+        print(p,j+1)
+        create_data(p,j+1,directory65)
         
-    for i in range(2):
-        p = confidence_95[i][1]
-        j = confidence_95[i][0]
-        print("95 percent",p,j)
-        create_data(p,j,directory95)
     
-    x_plot,y_plot = data_1_dft(default = True)
+    x_plot,y_plot = data_1_dft(True,directory)
     plt.plot(x_plot,y_plot,color= 'black',label = "default")
-
+    
     os.chdir(directory65)
     files = os.listdir()
     for f in files:
         x_list,y_list = np.array(data_1_dft(False,directory65+'/'+f))
-        plt.plot(x_list,y_list,color = 'red',label = "65%")
-    
-    os.chdir(directory95)
-    files = os.listdir()
-    
-    for f in files:
-        x_list,y_list = np.array(data_1_dft(False,directory95+'/'+f))
-        plt.plot(x_list,y_list,color = 'blue',label ="95%")
+        plt.plot(x_list,y_list,color = 'red',label = "Within 1 standard deviation")
     
     handles, labels = plt.gca().get_legend_handles_labels()
     labels, ids = np.unique(labels, return_index=True)
