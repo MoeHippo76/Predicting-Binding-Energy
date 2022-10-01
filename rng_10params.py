@@ -5,15 +5,12 @@ Created on Sun Apr 17 12:32:29 2022
 @author: Ilham
 """
 
-
 import numpy as np
 from  matplotlib import pyplot as plt
 from matplotlib.gridspec import GridSpec
-from pathlib import Path
 import subprocess
 import os
 import shutil
-la = np.linalg
 
 #Correlation Matrix            
 R = np.array([[  1.000000000000, -0.346456089960, -0.143602277420,  0.315457763048, -0.253113631056,  0.057551986284, -0.142555053005,  0.049793515737, -0.317267358672, -0.333077764936 ],
@@ -37,7 +34,7 @@ C = np.array([0.000416242011032, 0.603949405916, 13.13633652871, 0.122729138391,
 D = np.diag(C)
 S = D @ R @ D 
 
-eVa,eVe = la.eig(S) #eigen vector and eigen values 
+eVa,eVe = np.linalg.eig(S) #eigen vector and eigen values 
 
 L = np.diag(eVa) 
 L_2 = np.sqrt(L)
@@ -50,130 +47,11 @@ def random_params():
     Y = (T @ X) + X_mean
     return Y
 
-'''Generates and returns a list of Events. Also calls for distribution'''
-def Monte_Carlo_events(N,bins = 0,vis = False,dimens = 10):
-    List = []
-    v = Event_Visualizer()
-    for i in range(N):
-        Y = random_params()
-        List.append(Y)   
-    if vis == True:    
-        v.plot_distro(N,bins,List,dimens)
-    return List    
 
 '''
-Evaluates event generator.
-Keeps track of how many events are within two standard deviations.
-Prints the percentage.
-'''
-def evaluate_event_generator():
-    all_events = []
-    N = 10000
-    for i in range(N):
-        Event = np.array(random_params())
-        all_events.append(Event)
-
-    all_events = np.array(all_events).T
-    averages = list(map(np.mean,all_events))
-    stds = list(map(np.std,all_events))
-
-    counters = [0] * 10
-
-    for i,event in enumerate(all_events):
-        for e in event:
-            if e <= averages[i] + (2*stds[i]) and e >= averages[i] - (2*stds[i]):
-                counters[i] += 1
-           
-    confidence = [(c/N)*100 for c in counters]
-    print(confidence)
-
-
-'''
-Following class is a collection of functions for plotting,
-The plots are all different visualizations for the event geenerator.
-'''
-class Event_Visualizer:
-    def __init__(self) -> None:
-        super().__init__() 
-
-    '''
-    Used for Plotting the distribution for all parameters
-    '''
-    def plot_distro(self,N,bins,Events,dimen = 1):
-        for i in range(dimen):
-            x = self.plot_distro_single(N,Events,i+1,bins)
-            plt.hist(x,bins,label = str(dimen))
-        plt.legend()
-        plt.show()
-
-    '''
-    Plots the distribution for single parameter. dimen = parameter index+1
-    '''
-    def plot_distro_single(self,N,Events,dimen = 1,disp = False,bins = None):
-        x = []
-        for i in range(N):
-            x.append(Events[i][dimen-1])
-
-        if disp == True:
-            plt.hist(x,bins,label = str(dimen))
-            plt.legend()
-            plt.show()
-
-        return x
-    
-    '''
-    Plots the correlation. used a subfunction for plotting covariance table
-    '''
-    def plot_relation(self,par1,par2,all_draws,disp = False):
-        P1 = []
-        P2 = []
-        for draw in all_draws:
-            P1.append(draw[par1])
-            P2.append(draw[par2])
-        if disp == True:
-            plt.scatter(P1,P2)
-            plt.ylabel("Variable " + str(par2+1))
-            plt.xlabel("Variable " + str(par1+1))   
-            plt.show() 
-
-        return P1,P2
-
-    '''
-    Generates correlation matrix in the form of a graph. 
-    The diagonal holds gaussian distribution for each variable.
-    The rest is a scatter plot against on another.
-    '''
-    def Plot_correlation_graph(self):
-        N = 100000
-        bins = 100
-        E = Monte_Carlo_events(N,bins,False,10)
-
-        n = 10
-        fig = plt.figure()
-        gs = GridSpec(n, n)
-
-        ax_scatters = np.array([])
-        ax_hists = np.array([])
-        for i in range(n):
-            for j in range(n):
-                if j > i:
-                    pass
-                elif i == j:
-                    ax_hist_var = fig.add_subplot(gs[i,j])
-                    np.append(ax_hists,ax_hist_var)
-                    x = self.plot_distro_single(N,E,i+1)
-                    ax_hist_var.hist(x,bins)
-                else:
-                    ax_scatter =  fig.add_subplot(gs[i, j])
-                    np.append(ax_scatters,ax_scatter)
-                    x,y = self.plot_relation(i,j,E)
-                    ax_scatter.scatter(x,y,s=0.001)
-        plt.show()
-
-
-'''
-Following method takes the last 6 parameters from the list of the parameter set
-And writes it into hfbth_v200d under UNE1
+Following method writes the parameters into hfbth_v200d under UNE1
+The first 6 parameters in the input list must be the last 6 of the event from the generator.
+The last 4 parameters in the input list me be the first 4 of the event from the generator.
 '''
 def write_parameters(p):
     global root
@@ -258,13 +136,20 @@ def data_1_dft(default = False,destination = None):
 '''
 Plots histogram of minimas (Maybe works?)
 '''
-def plot_ground_state():
-    x_plot,y_plot = data_1_dft(default = True)
-    ground_states = []
-    for i in range(30):
-        x_list,y_list = np.array(data_1_dft(False,i+1))
+def plot_ground_state(directory,directory65):
+    global N,element,e
+    x_plot,y_plot = data_1_dft(True,directory+"/")
+    ground_states = [min(y_plot)]
+    ground_states_i = [np.where(y_plot == ground_states[-1])]
+    for i in range(N):
+        x_list,y_list = np.array(data_1_dft(False,directory65+"/"+"dft_mesh_"+str(i+1)+".dat"))
         ground_states.append(min(y_list))
-    plt.hist(ground_states,10)
+        ground_states_i.append(np.where(y_list == ground_states[-1]))
+
+    plt.hist(ground_states,N)
+    plt.title("Ground state histogram of "+ element+" N_shells = " + e)
+    plt.xlabel("Binding Energy (MeV)")
+    plt.savefig(directory+element+"_"+e+" ground state")
     plt.show()
 
 '''
@@ -315,6 +200,8 @@ def read_params(directory):
     params = []
     for line in lines:
         data = line.split()
+        if data == []:
+            break
         p = [float(d) for d in data[1:]]
         params.append((int(data[0]) - 1,p))
     return params
@@ -324,13 +211,14 @@ This method generates parameter sets.
 It returns a list of all the parameter sets with every parameter under 65% confidence band.
 Logs all the parameter sets under this band.
 '''
-def generate_params(directory,N):
+def generate_params(directory):
+    global N,std_factor
     j = 0
     confidence_65 = []
     while len(confidence_65) < N:
         e = random_params()
         event = list(e[4:]) + list(e[:4])
-        if eval_params_confidence(event,1):
+        if eval_params_confidence(event,std_factor):
             save_params(event,directory,j+1)
             confidence_65.append((j,event))
             j += 1
@@ -375,6 +263,7 @@ def plot_results(directory,directory65):
     plt.xlabel("Beta_2")
     plt.ylabel("Binding Energy (MeV)")
     plt.title(element+ " " + "N_shells = " + e)
+    plt.savefig(directory+element+"_"+e+".png")
     plt.show()
 
 '''
@@ -414,47 +303,134 @@ def read_slask(path):
                 dft.append(float(data[1]))
     return int_strength,beta_fit,beta_dft,fit,dft
 
+def dft(param,index):
+    global root,n,z,e
+    
+    params = list(X_mean.T)
+    params[index] = param
+    l = []
+    for i in range(10):
+        l.append(params[i] - X_mean[i])
+
+    params = params[4:] + params[:4]
+    write_parameters(params)
+    os.chdir(root + '/VSLAT/1_dft')    
+    subprocess.call("nice -n 10 ./run.sh -n "+n+" -z "+z+" -e "+e+" -t true ",shell=True)
+
+    y_list = data_1_dft(False,root + '/VSLAT/1_dft/data/dft_mesh.dat')[1]
+    y = min(y_list)
+    return y
 
 
+def derivative(index):
+    x = X_mean[index]
+    del_x = C[index]/100
+    if index in [0,1,2,3]:
+        return 0,0,0
+    y1 = dft(x+del_x,index)
+    y2 = dft(x-del_x,index)
+    del_y = (y1 - y2)/(2*del_x)
+    return del_y,y1,y2
+
+def linearization(directory):
+    global element,e
+    fl =  directory + "/log" + "_" +element+"_"+e+".txt" 
+    std = 0
+    with open(fl,"w") as fp:
+        string = "Parameter\tderivative\tBE_plus\t\tBE_minus\n"
+        fp.write(string)
+        fp.close()
+    
+    derivatives  = []
+    for i in range(10):
+        with open(fl,"a") as fp:
+            delta = derivative(i)
+            derivatives.append(delta)
+            string = str(X_mean[i]) + "\t" + str(delta[0]) + "\t" +  str(delta[1]) + "\t" + str(delta[2]) + "\n"
+            fp.write(string)
+            fp.close()
+            
+    with open(fl,"a") as fp:
+        string = "\nstd\tx_i\tBE_plus\t\tBE_minus\tx_j\tBE_plus\t\tBE_minus\n" 
+        fp.write(string)
+        fp.close()        
+
+    for i in range(10):
+        if i in [0,1,2,3]:
+            continue
+        delta_xi,y1,y2 = derivatives[i]
+        for j in range(10):
+            if j in [0,1,2,3]:
+                continue
+            with open(fl,"a") as fp:
+                delta_xj,y3,y4 = derivatives[j]
+                std += R[i][j] * delta_xi * delta_xj
+                string = str(std) + "\t" + str(X_mean[i])+ "\t" + str(y1) + "\t" + str(y2)+ "\t" + str(X_mean[j]) + "\t" + str(y3) + "\t" + str(y4)
+                fp.write(string + "\n")
+                fp.close()
+    
+    with open(fl,"a") as fp:
+        fp.write("final std = " + str(std))
+        fp.close()
+    
 if __name__ == "__main__":
-    global root,n,z,e,element
+    global root,n,z,e,element,N,std_factor
 
     '''
-    Set n,z,e for the nucleaus here, e is n_max
+    Set n,z,e for the nucleus. Here e is n_max.
     Write the name of the element for title of directories and plot.
     Change root directory in the same format to specify where the data folder will be saved.
     N := number of parameter sets. Will be overwritten if reading an existing parameter set.
-    Set run_boxes to False to not run any boxes in VSLAT
+    Set run_boxes to False to not run any boxes in VSLAT.
     '''
 
     n = "92"
     z = "64"
-    e = "10"
-    element = "Gd156_10"    
+    e = "8"
+    element = "Gd156"    
     root = "/home/hammy"
     N = 20
-    run_VSLAT = True
+    std_factor = 0.1
+    
+    run_VSLAT = False
+    read_params_from_diff_dir = False
+    visualize = False
+    linearize = True
+
+    
+    direct_params = "" + "/Parameters"
 
     #default is saved in directory and varied data is saved in directory65
-    directory65 = root + "/dft_"+element+"_"+ e + "/data"
+    directory65 = root +  "/dft_"+element+"_"+ e + "/data"
     directory = root + "/dft_"+element+"_"+ e
-
+    
+    
     #Directories created if needed.
     if not os.path.isdir(directory):
         os.mkdir(directory)
         os.mkdir(directory65)
     
+    if linearize:
+        lin = root+"/linearization"
+        if not os.path.isdir(lin):
+            os.mkdir(lin)
+        linearization(lin)
+    
+    if read_params_from_diff_dir:
+        shutil.copy(root + direct_params,directory)
+        
     #Moving the first 4 parameters to the last for convenience of writing into hfbtho_v200d
     p = list(X_mean[4:]) + list(X_mean[:4])
 
-    #If Parameter set already exists it reads it.
-    if os.path.isfile(directory+"/Parameters"):
-        confidence_65 = read_params(directory)
-        N = len(confidence_65)
-    else:
-        confidence_65 = generate_params(directory,N)
-    
+        
     if run_VSLAT:
+        #If Parameter set already exists it reads it.
+        if os.path.isfile(directory+"/Parameters"):
+            confidence_65 = read_params(directory)
+            N = len(confidence_65)
+        else:
+            confidence_65 = generate_params(directory)
+
         #Running default parameter set.
         create_data(p,0,directory)
         save_all_data(0,directory)
@@ -466,6 +442,8 @@ if __name__ == "__main__":
             create_data(p,j+1,directory65)
             save_all_data(j+1,directory65)
     
-    #Plotting results.
-    plot_results(directory+"/",directory65)
+    if visualize:     
+        #Plotting results.
+        plot_results(directory+"/",directory65)
+        plot_ground_state(directory,directory65)
     

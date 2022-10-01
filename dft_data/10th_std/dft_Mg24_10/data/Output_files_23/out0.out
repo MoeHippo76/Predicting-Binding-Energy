@@ -1,0 +1,251 @@
+
+  =======================================
+           FORTRAN 95 CODE (KIND= 8) 
+               Version: 200d  
+  =======================================
+       AXIALLY DEFORMED CONFIGURATIONAL  
+     HARTREE-FOCK-BOGOLIUBOV CALCULATIONS
+                     WITH                
+            UNEDF AND DELTA PAIRING      
+                     USING               
+             HARMONIC-OSCILLATOR         
+                   AND/OR                
+       TRANSFORMED HARMONIC-OSCILLATOR   
+                    BASIS                
+                     ---                 
+               v1.66  (2005):,           
+   Stoitsov,Dobaczewski,Nazarewicz,Ring, 
+               v2.00d (2012):,           
+         Stoitsov,Schunck,Kortelainen    
+  =======================================
+    Nucleus: MG (A=  24, N= 12, Z= 12)
+       Reflection Symmetry Imposed       
+            ( 9/15/2022, 14: 1)                               
+  =======================================
+
+
+  ---------------------------------------
+           UNEDF Module Version:17
+         M.Kortelainen & M.Stoitsov 
+  ---------------------------------------
+
+  UNE1 functional
+  ----------------------------------
+  Crho(0)=   -776.000133550877536    ; Crho(1)=    291.383596263029290    
+  CDrho(0)=   892.601055544118026    ; CDrho(1)=  -202.615280792038703    
+  Ctau(0)=   -2.38896853630668060    ; Ctau(1)=   -35.0089123878938508    
+  CrDr(0)=   -44.4531336381481736    ; CrDr(1)=   -134.563502236934170    
+  CrdJ(0)=   -69.0072732144797243    ; CrdJ(1)=   -37.2591849302123421    
+  CJ(0)=      0.00000000000000000    ; CJ(1)=      0.00000000000000000    
+  CpV0(0)=   0.100000000000000006    ; CpV0(1)=   0.100000000000000006    
+  CpV1(0)=    1.00000000000000000    ; CpV1(1)=    1.00000000000000000    
+  sigma=     0.272597924550515680    ; hbzero=     20.7355300000000007    
+  e^2 chrg=   1.43997840859651305    ; CExPar=     1.00000000000000000    
+  c.m. correction: F, chr. density in direct Coul: F
+  use tensor terms: F
+  use TMR pairing:  0
+
+  Coupling constants in natural units
+  -----------------------------------
+  Crho_nu(0)=  -0.873869209422508231    ; Crho_nu(1)=   0.328132872529159347    
+  CDrho_nu(0)=  0.942058669906583601    ; CDrho_nu(1)= -0.213841873410447275    
+  Ctau_nu(0)=  -0.338639006104956355E-01; Ctau_nu(1)=  -0.496255313357126082    
+  CrDr_nu(0)=  -0.630128223318752734    ; CrDr_nu(1)=   -1.90745294310011237    
+  CrdJ_nu(0)=  -0.978185943440348482    ; CrdJ_nu(1)=  -0.528153182484113359    
+  CJ_nu(0)=      0.00000000000000000    ; CJ_nu(1)=      0.00000000000000000    
+  CpV0_nu(0)=   0.112611992142809880E-03; CpV0_nu(1)=   0.112611992142809880E-03
+  CpV1_nu(0)=   0.887702254206059068E-03; CpV1_nu(1)=   0.887702254206059068E-03
+  fpi_nu=        93.0000000000000000    ; Lambda_nu=     700.000000000000000    
+
+  Nuclear matter properties
+  ----------------------------------
+      E_NM=     -15.8000000000000096      K_NM=     219.9999999999998579
+      P_NM=      -0.0000000000000039    RHO_NM=       0.1588149653083597
+    ASS_NM=      28.9565927161605288   LASS_NM=      38.6038391780550185
+  SMASS_NM=       0.9817027124353075  VMASS_NM=       1.2498385742322700
+
+  Associated (t,x)-coupling constants
+  -----------------------------------
+  t0=      -2069.33368946900646    ; x0=       0.632413906870643583E-01
+  t1=       233.898088021714671    ; x1=       -4.80311423933591541    
+  t2=       1468.77606941509839    ; x2=       -1.37594121324101892    
+  t3=       14281.6168887058884    ; x3=      -0.159508669298188743    
+  b4=       31.7480882842673822    ; b4p=       74.5183698604246842    
+  te=      -437.926674545431240    ; to=       -190.951078266754479    
+  sigma=   0.272597924550515680    ; hbzero=    20.7355300000000007    
+
+  ---------------------------------------
+        Characteristics of the run       
+  ---------------------------------------
+  Output file ................:     7
+  Nucleus ....................:   MG  24
+  Number of HO shells ........:     2
+  HO length b0 (fm) ..........:     1.55928400372611
+  Basis deformation ..........:  beta0=   0.010 q=   1.010
+  HO: b0,1/b0,bp,bz,q ........:   0.15592840E+01  0.64131999E+00  0.15568270E+01  0.15642096E+01  0.10095067E+01
+  h**2/(2m), cmc, e**2 .......:   0.20735530E+02  0.20735530E+02  0.14399784E+01
+  hom=f*41.0_pr*A^{-1/3}, f...:   0.17056687E+02  0.12000000E+01
+  THO basis is ...............:  OFF
+  Maximal number of iterations:   400
+  Initial mixing parameter ...:  0.300
+  Initial w.f. ...............:  from   spherical scratch
+  Skyrme functional ..........:    UNE1                          
+    with direct and exchange Coulomb
+  Lipkin-Nogami procedure is .:  OFF
+  PAV procedure is ...........:  OFF
+  Constraint calculation is ..:   ON
+    Constraint 1 .............: lambda=2 Ql=  -1.292
+  Temperature T ..............:   0.05 MeV
+  Restart indicator ..........:   1
+  Broyden mixing (#iterations):   7
+
+  ---------------------------------------
+        Harmonic Oscillator Basis        
+  ---------------------------------------
+  NUV, NQP:                          26      10
+  Comparison with bookkeeping spherical basis:
+  n00:                                2       2  Maximal number of shells
+  nbx, 2*n00+1:                       5       5  Maximal number of K-blocks
+  ntx, (n00+1)*(n00+2)*(n00+3)/6     10      10  Max.num. p/n levels
+  nzx, n00:                           2       2  Maximal nz-quantum number
+  nrx, n00/2  :                       1       1  Maximal nr-quantum number
+  nlx, n00:                           2       2  Maximal ml-quantum number
+  ndx, (n00+2)*(n00+2)/4:             4       4  Maximal dim. of one k-block
+
+  Actual basis used
+  Number of blocks: nb .......:    5
+  Number of levels: nt .......:   10
+  Maximal 2*omega : nom ......:    5
+  Maximal nz:       nzm ......:    2
+  Maximal nr:       nrm ......:    1
+  Maximal ml:       nlm ......:    2
+  Maximal N=nz+2*nr+nl .......:    2
+  2 x biggest block dim. .....:    8
+  Non-zero elements of h .....:       18
+  Number of Broyden elements .:       72
+
+  ---------------------------------------
+            Integration Meshes           
+  ---------------------------------------
+  Number of Gauss-Hermite mesh points ngh ....:  40
+  Number of Gauss-Laguerre mesh points ngl ...:  40
+  Number of Gauss-Legendre mesh points nleg ..:  80
+  Integration boundaries
+    Hermite  - from xh(1)  =  0.12379686 to xh(ngh)   = 11.88786356
+    Laguerre - From xl(1)  =  0.03570039 to xl(ngl)   =142.28004447
+    Legendre - From xleg(1)=  0.00978669 to xleg(nleg)=  0.99988775
+  Max.dev.in:     Orthogonality            Normalization
+  Hermite     5.2235050987142219E-016   1.2212453270876722E-015
+  Laguerre    1.5560737552501847E-016   5.5511151231257827E-016
+
+  Scratch initialization for the nucleus: MG  12  12
+
+
+  Initial potentials of Saxon-Woods shape 
+  v0ws   =  -71.27999878
+  kappa  =    0.46160001
+  vs0    =   11.11750031   11.11750031
+  r0     =    1.23339999    1.23339999
+  a      =    0.61500001    0.61500001
+  r0-so  =    1.14429998    1.14429998
+  a-so   =    0.64760000    0.64760000
+  beta00 =    0.01000000
+
+  ### REGULAR STAGE (reflection symmetry imposed)
+  |HFB+HO> iterations(b0=  1.559, Nsh=  2, inin=  1, N= 12, Z= 12)...
+  ----------------------------------------------------------------------------------------------------------------------------------
+  i          si     mix   beta      Etot       A       rn      rp         En      Dn      Ep      Dp        Ln      Lp     time
+  ----------------------------------------------------------------------------------------------------------------------------------
+   1L  52.26905082 0.30  0.010     0.000000    0.0   0.000   0.000 |   -2.000   1.000  -2.000   1.000 |   -7.000  -7.000   0.000
+   2B 227.25847107 0.10  0.008   -38.146367   24.0   2.564   2.564 |    0.000   0.000   0.000   0.000 |  -16.246 -16.246  39.046
+   3L 530.03366699 0.10 -0.358   -57.623336   24.0   2.618   2.619 |   -0.000   0.000  -0.000   0.000 |   -8.369  -4.175   0.208
+   4L ************ 0.10 -0.365   -57.586765   24.0   2.625   2.626 |   -0.000   0.000  -0.000   0.000 |   -3.210   1.620   0.222
+   5L ************ 0.10 -0.391   -16.185782   24.0   2.610   2.610 |   -0.000   0.000  -0.000   0.000 |    3.538   8.701   0.216
+   6L ************ 0.10 -0.396     7.486306   24.0   2.607   2.607 |   -0.000   0.000  -0.000   0.000 |  882.376 920.996   0.227
+ Low accuracy= 0.10000E+02  -0.20000E+01   for N,Z=   12.0000   12.0000 it= 1
+ Low accuracy= 0.10000E+02  -0.20000E+01   for N,Z=   12.0000   12.0000 it= 1
+ Low accuracy= 0.10000E+02  -0.20000E+01   for N,Z=   12.0000   12.0000 it= 1
+ Low accuracy= 0.10000E+02  -0.20000E+01   for N,Z=   12.0000   12.0000 it= 1
+ Low accuracy= 0.10000E+02  -0.20000E+01   for N,Z=   12.0000   12.0000 it= 1
+ Low accuracy= 0.10000E+02  -0.20000E+01   for N,Z=   12.0000   12.0000 it= 1
+ Low accuracy= 0.10000E+02  -0.20000E+01   for N,Z=   12.0000   12.0000 it= 1
+ Low accuracy= 0.10000E+02  -0.20000E+01   for N,Z=   12.0000   12.0000 it= 1
+ Low accuracy= 0.10000E+02  -0.20000E+01   for N,Z=   12.0000   12.0000 it= 1
+ Low accuracy= 0.10000E+02  -0.20000E+01   for N,Z=   12.0000   12.0000 it= 1
+ Low accuracy= 0.10000E+02  -0.20000E+01   for N,Z=   12.0000   12.0000 it= 1
+ Low accuracy= 0.10000E+02  -0.20000E+01   for N,Z=   12.0000   12.0000 it= 1
+ Low accuracy= 0.10000E+02  -0.20000E+01   for N,Z=   12.0000   12.0000 it= 1
+ Low accuracy= 0.10000E+02  -0.20000E+01   for N,Z=   12.0000   12.0000 it= 1
+ Low accuracy= 0.10000E+02  -0.20000E+01   for N,Z=   12.0000   12.0000 it= 1
+ Low accuracy= 0.10000E+02  -0.20000E+01   for N,Z=   12.0000   12.0000 it= 1
+ Low accuracy= 0.10000E+02  -0.20000E+01   for N,Z=   12.0000   12.0000 it= 1
+ Low accuracy= 0.10000E+02  -0.20000E+01   for N,Z=   12.0000   12.0000 it= 1
+ Low accuracy= 0.10000E+02  -0.20000E+01   for N,Z=   12.0000   12.0000 it= 1
+ Low accuracy= 0.10000E+02  -0.20000E+01   for N,Z=   12.0000   12.0000 it= 1
+ Low accuracy= 0.10000E+02  -0.20000E+01   for N,Z=   12.0000   12.0000 it= 1
+ Low accuracy= 0.10000E+02  -0.20000E+01   for N,Z=   12.0000   12.0000 it= 2
+ Low accuracy= 0.10000E+02  -0.20000E+01   for N,Z=   12.0000   12.0000 it= 2
+ Low accuracy= 0.10000E+02  -0.20000E+01   for N,Z=   12.0000   12.0000 it= 2
+ Low accuracy= 0.10000E+02  -0.20000E+01   for N,Z=   12.0000   12.0000 it= 2
+ Low accuracy= 0.10000E+02  -0.20000E+01   for N,Z=   12.0000   12.0000 it= 2
+ Low accuracy= 0.10000E+02  -0.20000E+01   for N,Z=   12.0000   12.0000 it= 2
+ Low accuracy= 0.10000E+02  -0.20000E+01   for N,Z=   12.0000   12.0000 it= 2
+ Low accuracy= 0.10000E+02  -0.20000E+01   for N,Z=   12.0000   12.0000 it= 2
+ Low accuracy= 0.10000E+02  -0.20000E+01   for N,Z=   12.0000   12.0000 it= 2
+ Low accuracy= 0.10000E+02  -0.20000E+01   for N,Z=   12.0000   12.0000 it= 2
+ Low accuracy= 0.10000E+02  -0.20000E+01   for N,Z=   12.0000   12.0000 it= 2
+ Low accuracy= 0.10000E+02  -0.20000E+01   for N,Z=   12.0000   12.0000 it= 2
+ Low accuracy= 0.10000E+02  -0.20000E+01   for N,Z=   12.0000   12.0000 it= 2
+ Low accuracy= 0.10000E+02  -0.20000E+01   for N,Z=   12.0000   12.0000 it= 2
+ Low accuracy= 0.10000E+02  -0.20000E+01   for N,Z=   12.0000   12.0000 it= 2
+ Low accuracy= 0.10000E+02  -0.20000E+01   for N,Z=   12.0000   12.0000 it= 2
+ Low accuracy= 0.10000E+02  -0.20000E+01   for N,Z=   12.0000   12.0000 it= 2
+ Low accuracy= 0.10000E+02  -0.20000E+01   for N,Z=   12.0000   12.0000 it= 2
+ Low accuracy= 0.10000E+02  -0.20000E+01   for N,Z=   12.0000   12.0000 it= 2
+ Low accuracy= 0.10000E+02  -0.20000E+01   for N,Z=   12.0000   12.0000 it= 2
+ Low accuracy= 0.10000E+02  -0.20000E+01   for N,Z=   12.0000   12.0000 it= 2
+   7L ************ 0.10 -0.420    34.847124   20.0   2.774   2.774 |   -0.000   0.000  -0.000   0.000 | 1000.0001000.000   0.186
+ Low accuracy= 0.10000E+02  -0.20000E+01   for N,Z=   12.0000   12.0000 it= 1
+ Low accuracy= 0.10000E+02  -0.20000E+01   for N,Z=   12.0000   12.0000 it= 1
+ Low accuracy= 0.10000E+02  -0.20000E+01   for N,Z=   12.0000   12.0000 it= 1
+ Low accuracy= 0.10000E+02  -0.20000E+01   for N,Z=   12.0000   12.0000 it= 1
+ Low accuracy= 0.10000E+02  -0.20000E+01   for N,Z=   12.0000   12.0000 it= 1
+ Low accuracy= 0.10000E+02  -0.20000E+01   for N,Z=   12.0000   12.0000 it= 1
+ Low accuracy= 0.10000E+02  -0.20000E+01   for N,Z=   12.0000   12.0000 it= 1
+ Low accuracy= 0.10000E+02  -0.20000E+01   for N,Z=   12.0000   12.0000 it= 1
+ Low accuracy= 0.10000E+02  -0.20000E+01   for N,Z=   12.0000   12.0000 it= 1
+ Low accuracy= 0.10000E+02  -0.20000E+01   for N,Z=   12.0000   12.0000 it= 1
+ Low accuracy= 0.10000E+02  -0.20000E+01   for N,Z=   12.0000   12.0000 it= 1
+ Low accuracy= 0.10000E+02  -0.20000E+01   for N,Z=   12.0000   12.0000 it= 1
+ Low accuracy= 0.10000E+02  -0.20000E+01   for N,Z=   12.0000   12.0000 it= 1
+ Low accuracy= 0.10000E+02  -0.20000E+01   for N,Z=   12.0000   12.0000 it= 1
+ Low accuracy= 0.10000E+02  -0.20000E+01   for N,Z=   12.0000   12.0000 it= 1
+ Low accuracy= 0.10000E+02  -0.20000E+01   for N,Z=   12.0000   12.0000 it= 1
+ Low accuracy= 0.10000E+02  -0.20000E+01   for N,Z=   12.0000   12.0000 it= 1
+ Low accuracy= 0.10000E+02  -0.20000E+01   for N,Z=   12.0000   12.0000 it= 1
+ Low accuracy= 0.10000E+02  -0.20000E+01   for N,Z=   12.0000   12.0000 it= 1
+ Low accuracy= 0.10000E+02  -0.20000E+01   for N,Z=   12.0000   12.0000 it= 1
+ Low accuracy= 0.10000E+02  -0.20000E+01   for N,Z=   12.0000   12.0000 it= 1
+ Low accuracy= 0.10000E+02  -0.20000E+01   for N,Z=   12.0000   12.0000 it= 2
+ Low accuracy= 0.10000E+02  -0.20000E+01   for N,Z=   12.0000   12.0000 it= 2
+ Low accuracy= 0.10000E+02  -0.20000E+01   for N,Z=   12.0000   12.0000 it= 2
+ Low accuracy= 0.10000E+02  -0.20000E+01   for N,Z=   12.0000   12.0000 it= 2
+ Low accuracy= 0.10000E+02  -0.20000E+01   for N,Z=   12.0000   12.0000 it= 2
+ Low accuracy= 0.10000E+02  -0.20000E+01   for N,Z=   12.0000   12.0000 it= 2
+ Low accuracy= 0.10000E+02  -0.20000E+01   for N,Z=   12.0000   12.0000 it= 2
+ Low accuracy= 0.10000E+02  -0.20000E+01   for N,Z=   12.0000   12.0000 it= 2
+ Low accuracy= 0.10000E+02  -0.20000E+01   for N,Z=   12.0000   12.0000 it= 2
+ Low accuracy= 0.10000E+02  -0.20000E+01   for N,Z=   12.0000   12.0000 it= 2
+ Low accuracy= 0.10000E+02  -0.20000E+01   for N,Z=   12.0000   12.0000 it= 2
+ Low accuracy= 0.10000E+02  -0.20000E+01   for N,Z=   12.0000   12.0000 it= 2
+ Low accuracy= 0.10000E+02  -0.20000E+01   for N,Z=   12.0000   12.0000 it= 2
+ Low accuracy= 0.10000E+02  -0.20000E+01   for N,Z=   12.0000   12.0000 it= 2
+ Low accuracy= 0.10000E+02  -0.20000E+01   for N,Z=   12.0000   12.0000 it= 2
+ Low accuracy= 0.10000E+02  -0.20000E+01   for N,Z=   12.0000   12.0000 it= 2
+ Low accuracy= 0.10000E+02  -0.20000E+01   for N,Z=   12.0000   12.0000 it= 2
+ Low accuracy= 0.10000E+02  -0.20000E+01   for N,Z=   12.0000   12.0000 it= 2
+ Low accuracy= 0.10000E+02  -0.20000E+01   for N,Z=   12.0000   12.0000 it= 2
+ Low accuracy= 0.10000E+02  -0.20000E+01   for N,Z=   12.0000   12.0000 it= 2
+ Low accuracy= 0.10000E+02  -0.20000E+01   for N,Z=   12.0000   12.0000 it= 2
+   8L ************ 0.10 -0.420    34.847124   20.0   2.774   2.774 |   -0.000   0.000  -0.000   0.000 | 1000.0001000.000   0.234
+ Low accuracy=         NaN           NaN   for N,Z=   12.0000   12.0000 it= 1
