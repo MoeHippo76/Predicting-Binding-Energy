@@ -7,7 +7,6 @@ Created on Sun Apr 17 12:32:29 2022
 
 import numpy as np
 from  matplotlib import pyplot as plt
-from matplotlib.gridspec import GridSpec
 import subprocess
 import os
 import shutil
@@ -23,11 +22,10 @@ R = np.array([[  1.000000000000, -0.346456089960, -0.143602277420,  0.3154577630
          [  0.049793515737, -0.173751865385, -0.132193258832, -0.096484542058,  0.065173748885,  0.205781326002, -0.026672742907,  1.000000000000,  0.104472994861,  0.067120558586 ],
          [ -0.317267358672, -0.224620446870, -0.362528502960, -0.992455543341,  0.984774451952,  0.224223670029,  0.853817429008,  0.104472994862,  1.000000000000,  0.964057333441 ],
          [ -0.333077764936, -0.177159589117, -0.287229425361, -0.971189044814,  0.965533888467,  0.154010161981,  0.837871899707,  0.067120558586,  0.964057333441,  1.000000000000 ]])
-
 #Mean Vector
 global X_mean
 X_mean = np.array([0.158706769332587,28.986789057772100, 40.004790480413600, 0.992423332283364, -45.135131022237300,-145.382167908057000,-186.065399575124000,-206.579593890106000, -74.026333176459900, -35.658261114791700]).T
-#List of variances
+#List of standard deviations
 global C
 C = np.array([0.000416242011032, 0.603949405916, 13.13633652871, 0.122729138391, 5.36118191809, 52.1685613068, 5.04824419651, 23.1467313535, 18.51551028812, 13.04856045886])
 #Getting the covariance matrix S
@@ -39,6 +37,8 @@ eVa,eVe = np.linalg.eig(S) #eigen vector and eigen values
 L = np.diag(eVa) 
 L_2 = np.sqrt(L)
 T = eVe @ L_2 #Calculates Transformation to apply to normal scatter plot.
+
+del_xs = [0.004,0.2,0.4,0.012,0.6,2,2,2,0.7,0.15]
 
 '''Genegerates parameter sets'''
 def random_params():
@@ -323,54 +323,61 @@ def dft(param,index):
 
 
 def derivative(index):
+    global std_factor
     x = X_mean[index]
-    del_x = C[index]/100
-    if index in [0,1,2,3]:
-        return 0,0,0
+    del_x = del_xs[index]
     y1 = dft(x+del_x,index)
     y2 = dft(x-del_x,index)
     del_y = (y1 - y2)/(2*del_x)
     return del_y,y1,y2
 
 def linearization(directory):
-    global element,e
-    fl =  directory + "/log" + "_" +element+"_"+e+".txt" 
-    std = 0
-    with open(fl,"w") as fp:
-        string = "Parameter\tderivative\tBE_plus\t\tBE_minus\n"
-        fp.write(string)
-        fp.close()
-    
+    global element,std_factor
+    fl =  directory + "/log" + "_" +element+"_"+"del_xs"+"perc.txt"
     derivatives  = []
-    for i in range(10):
-        with open(fl,"a") as fp:
-            delta = derivative(i)
-            derivatives.append(delta)
-            string = str(X_mean[i]) + "\t" + str(delta[0]) + "\t" +  str(delta[1]) + "\t" + str(delta[2]) + "\n"
-            fp.write(string)
+    std = 0
+    if os.path.isfile(fl):
+        with open(fl,"r") as fp:
+            lines = fp.readlines()
             fp.close()
-            
+        for i in range(1,11):
+            data = lines[i].split()
+            data = (float(data[1]),float(data[2]),float(data[3]))
+            derivatives.append(data)
+    else:
+        for i in range(10):
+            with open(fl,"a") as fp:
+                delta = derivative(i)
+                derivatives.append(delta)
+                fp.close()
+                
+    with open(fl,"w") as fp:
+            string = "Parameter\tderivative\tBE_plus\t\tBE_minus\n"
+            fp.write(string)
+            for i,delta in enumerate(derivatives):
+                string = str(X_mean[i]) + "\t" + str(delta[0]) + "\t" +  str(delta[1]) + "\t" + str(delta[2]) + "\n"
+                fp.write(string)
+            fp.close()
+
+
     with open(fl,"a") as fp:
         string = "\nstd\tx_i\tBE_plus\t\tBE_minus\tx_j\tBE_plus\t\tBE_minus\n" 
         fp.write(string)
-        fp.close()        
+        fp.close()  
 
-    for i in range(10):
-        if i in [0,1,2,3]:
-            continue
+    for i in range(4,10):
         delta_xi,y1,y2 = derivatives[i]
-        for j in range(10):
-            if j in [0,1,2,3]:
-                continue
+        for j in range(4,10):
             with open(fl,"a") as fp:
                 delta_xj,y3,y4 = derivatives[j]
-                std += R[i][j] * delta_xi * delta_xj
+                std += R[i][j] * delta_xi * delta_xj * C[i] * C[j]
                 string = str(std) + "\t" + str(X_mean[i])+ "\t" + str(y1) + "\t" + str(y2)+ "\t" + str(X_mean[j]) + "\t" + str(y3) + "\t" + str(y4)
                 fp.write(string + "\n")
                 fp.close()
     
     with open(fl,"a") as fp:
         fp.write("final std = " + str(std))
+        print("final std = " + str(std))
         fp.close()
     
 if __name__ == "__main__":
@@ -401,12 +408,12 @@ if __name__ == "__main__":
     direct_params = "" + "/Parameters"
 
     #default is saved in directory and varied data is saved in directory65
-    directory65 = root +  "/dft_"+element+"_"+ e + "/data"
-    directory = root + "/dft_"+element+"_"+ e
+    directory65 = root +  "/dft_"+element+"_"+ str(std_factor) + "perc/data"
+    directory = root + "/dft_"+element+"_"+ str(std_factor) + "perc"
     
     
     #Directories created if needed.
-    if not os.path.isdir(directory):
+    if not os.path.isdir(directory) and run_VSLAT:
         os.mkdir(directory)
         os.mkdir(directory65)
     
