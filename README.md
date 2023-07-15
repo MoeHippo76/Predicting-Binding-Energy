@@ -29,19 +29,19 @@ Data from All non standard runs, like only parameter sets under 10 percent of 1 
 The `evaluate_parameters.ods` sheets file is to manually analyse a generated parameter set.
 
 ## Notes and Observations:
--Stanadard deviation observed is too high compared to other analyses done in the different papers. After using more precise values for the correlation matrix there was an improvement in the width of the variation. For Mg 24, the width reduced to 4 Mev or 2 MeV in one direction. For Gd156, 15 MeV variation was observed. In terms of relative percentages to the ground state energy both Mg24 and Gd156 show approximately 1% variation. 
+- Stanadard deviation observed is too high compared to other analyses done in the different papers. After using more precise values for the correlation matrix there was an improvement in the width of the variation. For Mg 24, the width reduced to 4 Mev or 2 MeV in one direction. For Gd156, 15 MeV variation was observed. In terms of relative percentages to the ground state energy both Mg24 and Gd156 show approximately 1% variation. 
 
--Decreasing variation upto 10 percent of one standard deviation did not have much effect. With pairing curves were smoother but no difference in the error due to variation of parameter sets.
+- Decreasing variation upto 10 percent of one standard deviation did not have much effect. With pairing curves were smoother but no difference in the error due to variation of parameter sets.
 
--Linear extrapolation  gives standard deviation values that are closer to values observed through Monte Carlo but the linearization code is quite buggy.
+- Linear extrapolation  gives standard deviation values that are closer to values observed through Monte Carlo but the linearization code is quite buggy.
 
--Int_strength does not have much variation in magnitude. But the relative variation from the default parameter set is 5% for Gd 156. and 20% for Mg24. Maybe also varying box 2 parameters will reduce this large relative variation. 
+- Int_strength does not have much variation in magnitude. But the relative variation from the default parameter set is 5% for Gd 156. and 20% for Mg24. Maybe also varying box 2 parameters will reduce this large relative variation. 
 
 On further evaluation of the event generator, relative errors for most correlation coefficients is under 10 percent. However there are two that regularly have relative error higher than 10 percent.
 
 ## Known Bugs: 
--if you are only running the scripts to make plots, make sure to set N as the number of varied events in `/data` subdirectory`.
--If you have run `eval_event_gen` then close and open a new terminal before running the different python box scripts again.
+- if you are only running the scripts to make plots, make sure to set N as the number of varied events in `/data` subdirectory`.
+- If you have run `eval_event_gen` then close and open a new terminal before running the different python box scripts again.
 
 Other relevant papers:
 https://journals.aps.org/prc/abstract/10.1103/PhysRevC.85.024304
