@@ -107,7 +107,7 @@ def plot_ground_state(directory,directory65):
     plt.hist(ground_states,N)
     plt.title("Ground state histogram of "+ element+" N_shells = " + e)
     plt.xlabel("Binding Energy (MeV)")
-    plt.savefig(directory65+element+"_"+e+" ground state")
+    plt.savefig(directory65+"/"+element+"_"+e+" ground state")
     plt.show()
 
 '''
@@ -230,15 +230,15 @@ if __name__ == "__main__":
     Set run_boxes to False to not run any boxes in VSLAT.
     '''
 
-    n = "12"
-    z = "12"
-    e = "4"
-    element = "Mg24"    
+    n = "92"
+    z = "62"
+    e = "8"
+    element = "Gd156"    
     root = "/home/hammy"
     N = 20
     std_factor = 1
     
-    run_VSLAT = True
+    run_VSLAT = False
     read_params_from_diff_dir = False
     visualize = True
 

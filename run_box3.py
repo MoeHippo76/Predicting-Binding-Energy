@@ -228,10 +228,10 @@ if __name__ == "__main__":
     Set run_boxes to False to not run any boxes in VSLAT.
     '''
 
-    n = "12"
-    z = "12"
-    e = "4"
-    element = "Mg24"    
+    n = "92"
+    z = "64"
+    e = "10"
+    element = "Gd156"    
     root = "/home/hammy"
     N = 20
     std_factor = 1

@@ -22,7 +22,7 @@ Multi-threading framework with OpenMP: 1 threads/task
   =======================================
     Nucleus: GD (A= 156, N= 92, Z= 64)
        Reflection Symmetry Imposed       
-            ( 8/31/2022, 20:11)                               
+            ( 9/ 1/2022, 16:26)                               
   =======================================
 
 
@@ -81,7 +81,7 @@ Multi-threading framework with OpenMP: 1 threads/task
   ---------------------------------------
   Output file ................:     7
   Nucleus ....................:   GD 156
-  Number of HO shells ........:     2
+  Number of HO shells ........:    20
   HO length b0 (fm) ..........:     2.13015292605643
   Basis deformation ..........:  beta0=   0.010 q=   1.010
   HO: b0,1/b0,bp,bz,q ........:   0.21301529E+01  0.46944986E+00  0.21267964E+01  0.21368819E+01  0.10095067E+01
@@ -104,27 +104,27 @@ Multi-threading framework with OpenMP: 1 threads/task
   ---------------------------------------
         Harmonic Oscillator Basis        
   ---------------------------------------
-  NUV, NQP:                          26      10
+  NUV, NQP:                      128843    1771
   Comparison with bookkeeping spherical basis:
-  n00:                                2       2  Maximal number of shells
-  nbx, 2*n00+1:                       5       5  Maximal number of K-blocks
-  ntx, (n00+1)*(n00+2)*(n00+3)/6     10      10  Max.num. p/n levels
-  nzx, n00:                           2       2  Maximal nz-quantum number
-  nrx, n00/2  :                       1       1  Maximal nr-quantum number
-  nlx, n00:                           2       2  Maximal ml-quantum number
-  ndx, (n00+2)*(n00+2)/4:             4       4  Maximal dim. of one k-block
+  n00:                               20      20  Maximal number of shells
+  nbx, 2*n00+1:                      41      41  Maximal number of K-blocks
+  ntx, (n00+1)*(n00+2)*(n00+3)/6   1771    1771  Max.num. p/n levels
+  nzx, n00:                          20      20  Maximal nz-quantum number
+  nrx, n00/2  :                      10      10  Maximal nr-quantum number
+  nlx, n00:                          20      20  Maximal ml-quantum number
+  ndx, (n00+2)*(n00+2)/4:           121     121  Maximal dim. of one k-block
 
   Actual basis used
-  Number of blocks: nb .......:    5
-  Number of levels: nt .......:   10
-  Maximal 2*omega : nom ......:    5
-  Maximal nz:       nzm ......:    2
-  Maximal nr:       nrm ......:    1
-  Maximal ml:       nlm ......:    2
-  Maximal N=nz+2*nr+nl .......:    2
-  2 x biggest block dim. .....:    8
-  Non-zero elements of h .....:       18
-  Number of Broyden elements .:       72
+  Number of blocks: nb .......:   41
+  Number of levels: nt .......: 1771
+  Maximal 2*omega : nom ......:   41
+  Maximal nz:       nzm ......:   20
+  Maximal nr:       nrm ......:   10
+  Maximal ml:       nlm ......:   20
+  Maximal N=nz+2*nr+nl .......:   20
+  2 x biggest block dim. .....:  242
+  Non-zero elements of h .....:    65307
+  Number of Broyden elements .:   261228
 
   ---------------------------------------
             Integration Meshes           
@@ -137,8 +137,8 @@ Multi-threading framework with OpenMP: 1 threads/task
     Laguerre - From xl(1)  =  0.03570039 to xl(ngl)   =142.28004447
     Legendre - From xleg(1)=  0.00978669 to xleg(nleg)=  0.99988775
   Max.dev.in:     Orthogonality            Normalization
-  Hermite     5.2235050987142219E-016   1.2212453270876722E-015
-  Laguerre    1.5560737552501847E-016   5.5511151231257827E-016
+  Hermite     8.1015979368012488E-015   1.0991207943789050E-014
+  Laguerre    1.0201672216221464E-014   1.4432899320127035E-014
 
   Scratch initialization for the nucleus: GD  92  64
 
@@ -154,1352 +154,527 @@ Multi-threading framework with OpenMP: 1 threads/task
   beta00 =    0.01000000
 
   ### REGULAR STAGE (reflection symmetry imposed)
-  |HFB+HO> iterations(b0=  2.130, Nsh=  2, inin=  1, N= 92, Z= 64)...
+  |HFB+HO> iterations(b0=  2.130, Nsh= 20, inin=  1, N= 92, Z= 64)...
   ----------------------------------------------------------------------------------------------------------------------------------
   i          si     mix   beta      Etot       A       rn      rp         En      Dn      Ep      Dp        Ln      Lp     time
   ----------------------------------------------------------------------------------------------------------------------------------
-   1L  69.94764065 0.30  0.010     0.000000    0.0   0.000   0.000 |   -2.000   1.000  -2.000   1.000 |   -7.000  -7.000   0.000
- Low accuracy= 0.20000E+02  -0.72000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.20000E+02  -0.72000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.20000E+02  -0.72000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.20000E+02  -0.72000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.20000E+02  -0.72000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.20000E+02  -0.72000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.20000E+02  -0.72000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.20000E+02  -0.72000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.20000E+02  -0.72000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.20000E+02  -0.72000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.20000E+02  -0.72000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.20000E+02  -0.72000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.20000E+02  -0.72000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.20000E+02  -0.72000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.20000E+02  -0.72000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.20000E+02  -0.72000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.20000E+02  -0.72000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.20000E+02  -0.72000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.20000E+02  -0.72000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.20000E+02  -0.72000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.20000E+02  -0.72000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.20000E+02  -0.44000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.20000E+02  -0.44000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.20000E+02  -0.44000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.20000E+02  -0.44000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.20000E+02  -0.44000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.20000E+02  -0.44000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.20000E+02  -0.44000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.20000E+02  -0.44000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.20000E+02  -0.44000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.20000E+02  -0.44000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.20000E+02  -0.44000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.20000E+02  -0.44000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.20000E+02  -0.44000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.20000E+02  -0.44000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.20000E+02  -0.44000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.20000E+02  -0.44000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.20000E+02  -0.44000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.20000E+02  -0.44000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.20000E+02  -0.44000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.20000E+02  -0.44000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.20000E+02  -0.44000E+02   for N,Z=   92.0000   64.0000 it= 2
-   2B ************ 0.10  0.005  -889.026432   40.0   3.690   3.690 |   -0.000   0.000  -0.000   0.000 | 1000.0001000.000  39.206
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
-   3B ************ 0.10  0.480  4807.788211   20.0   3.587   3.587 |   -0.000   0.000  -0.000   0.000 | 1000.0001000.000   0.171
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
-   4B ************ 0.11  0.480  4807.788211   20.0   3.587   3.587 |   -0.000   0.000  -0.000   0.000 | 1000.0001000.000   0.167
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
-   5B ************ 0.13  0.480  4807.788209   20.0   3.587   3.587 |   -0.000   0.000  -0.000   0.000 | 1000.0001000.000   0.191
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
-   6B ************ 0.14  0.480  4807.788047   20.0   3.587   3.587 |   -0.000   0.000  -0.000   0.000 | 1000.0001000.000   0.206
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
-   7B ************ 0.16  0.480  4807.773817   20.0   3.587   3.587 |   -0.000   0.000  -0.000   0.000 | 1000.0001000.000   0.187
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
-   8B ************ 0.18  0.480  4806.267692   20.0   3.587   3.587 |   -0.000   0.000  -0.000   0.000 | 1000.0001000.000   0.174
- Low accuracy= 0.80000E+01  -0.84000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.80000E+01  -0.84000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.80000E+01  -0.84000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.80000E+01  -0.84000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.80000E+01  -0.84000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.80000E+01  -0.84000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.80000E+01  -0.84000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.80000E+01  -0.84000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.80000E+01  -0.84000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.80000E+01  -0.84000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.80000E+01  -0.84000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.80000E+01  -0.84000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.80000E+01  -0.84000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.80000E+01  -0.84000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.80000E+01  -0.84000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.80000E+01  -0.84000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.80000E+01  -0.84000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.80000E+01  -0.84000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.80000E+01  -0.84000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.80000E+01  -0.84000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.80000E+01  -0.84000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.80000E+01  -0.56000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.80000E+01  -0.56000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.80000E+01  -0.56000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.80000E+01  -0.56000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.80000E+01  -0.56000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.80000E+01  -0.56000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.80000E+01  -0.56000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.80000E+01  -0.56000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.80000E+01  -0.56000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.80000E+01  -0.56000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.80000E+01  -0.56000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.80000E+01  -0.56000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.80000E+01  -0.56000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.80000E+01  -0.56000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.80000E+01  -0.56000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.80000E+01  -0.56000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.80000E+01  -0.56000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.80000E+01  -0.56000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.80000E+01  -0.56000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.80000E+01  -0.56000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.80000E+01  -0.56000E+02   for N,Z=   92.0000   64.0000 it= 2
-   9B ************ 0.21  0.514  4118.966415   16.0   3.874   3.873 |   -0.000   0.000  -0.000   0.000 | 1000.0001000.000   0.207
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
-  10B ************ 0.10 -0.420  2120.047477   20.0   3.790   3.790 |   -0.000   0.000  -0.000   0.000 | 1000.0001000.000   0.194
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
-  11B ************ 0.11  0.480  4807.578116   20.0   3.587   3.587 |   -0.000   0.000  -0.000   0.000 | 1000.0001000.000   0.210
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
-  12B ************ 0.13  0.480  4808.935397   20.0   3.587   3.587 |   -0.000  -0.000  -0.000  -0.000 | 1000.0001000.000   0.195
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
-  13B ************ 0.14  0.480  4812.364259   20.0   3.587   3.587 |   -0.000  -0.000  -0.000  -0.000 | 1000.0001000.000   0.182
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
-  14B ************ 0.16  0.480  4820.343371   20.0   3.587   3.587 |   -0.000  -0.000  -0.000  -0.000 | 1000.0001000.000   0.182
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
-  15B ************ 0.18  0.480  4837.764633   20.0   3.587   3.587 |   -0.000  -0.000  -0.000  -0.000 | 1000.0001000.000   0.190
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
-  16B ************ 0.21  0.479  4872.767775   20.0   3.588   3.588 |   -0.000  -0.000  -0.000  -0.000 | 1000.0001000.000   0.228
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
-  17B ************ 0.24  0.479  4886.923135   20.0   3.588   3.588 |   -0.000  -0.000  -0.000  -0.000 | 1000.0001000.000   0.187
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
-  18B ************ 0.27  0.478  5001.538923   20.0   3.591   3.590 |   -0.000  -0.000  -0.000  -0.000 | 1000.0001000.000   0.208
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
-  19B ************ 0.30  0.472  5271.939031   20.0   3.603   3.601 |   -0.000  -0.000  -0.000  -0.000 | 1000.0001000.000   0.157
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
-  20B ************ 0.34  0.471  5286.036340   20.0   3.604   3.603 |   -0.000  -0.000  -0.000  -0.000 | 1000.0001000.000   0.172
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
-  21B ************ 0.38  0.467  5275.751008   20.0   3.606   3.605 |   -0.000  -0.000  -0.000  -0.000 | 1000.0001000.000   0.162
- Low accuracy= 0.12000E+02  -0.80000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.12000E+02  -0.80000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.12000E+02  -0.80000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.12000E+02  -0.80000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.12000E+02  -0.80000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.12000E+02  -0.80000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.12000E+02  -0.80000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.12000E+02  -0.80000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.12000E+02  -0.80000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.12000E+02  -0.80000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.12000E+02  -0.80000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.12000E+02  -0.80000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.12000E+02  -0.80000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.12000E+02  -0.80000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.12000E+02  -0.80000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.12000E+02  -0.80000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.12000E+02  -0.80000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.12000E+02  -0.80000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.12000E+02  -0.80000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.12000E+02  -0.80000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.12000E+02  -0.80000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.12000E+02  -0.52000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.12000E+02  -0.52000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.12000E+02  -0.52000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.12000E+02  -0.52000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.12000E+02  -0.52000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.12000E+02  -0.52000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.12000E+02  -0.52000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.12000E+02  -0.52000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.12000E+02  -0.52000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.12000E+02  -0.52000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.12000E+02  -0.52000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.12000E+02  -0.52000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.12000E+02  -0.52000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.12000E+02  -0.52000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.12000E+02  -0.52000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.12000E+02  -0.52000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.12000E+02  -0.52000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.12000E+02  -0.52000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.12000E+02  -0.52000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.12000E+02  -0.52000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.12000E+02  -0.52000E+02   for N,Z=   92.0000   64.0000 it= 2
-  22B ************ 0.10 -0.395  3203.921965   24.0   3.564   3.564 |   -0.000  -0.000  -0.000  -0.000 | 1000.0001000.000   0.202
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
-  23B ************ 0.11  0.479  4878.166231   20.0   3.588   3.588 |   -0.000  -0.000  -0.000  -0.000 | 1000.0001000.000   0.174
- Low accuracy= 0.80000E+01  -0.84000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.80000E+01  -0.84000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.80000E+01  -0.84000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.80000E+01  -0.84000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.80000E+01  -0.84000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.80000E+01  -0.84000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.80000E+01  -0.84000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.80000E+01  -0.84000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.80000E+01  -0.84000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.80000E+01  -0.84000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.80000E+01  -0.84000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.80000E+01  -0.84000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.80000E+01  -0.84000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.80000E+01  -0.84000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.80000E+01  -0.84000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.80000E+01  -0.84000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.80000E+01  -0.84000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.80000E+01  -0.84000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.80000E+01  -0.84000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.80000E+01  -0.84000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.80000E+01  -0.84000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.80000E+01  -0.56000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.80000E+01  -0.56000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.80000E+01  -0.56000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.80000E+01  -0.56000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.80000E+01  -0.56000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.80000E+01  -0.56000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.80000E+01  -0.56000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.80000E+01  -0.56000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.80000E+01  -0.56000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.80000E+01  -0.56000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.80000E+01  -0.56000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.80000E+01  -0.56000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.80000E+01  -0.56000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.80000E+01  -0.56000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.80000E+01  -0.56000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.80000E+01  -0.56000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.80000E+01  -0.56000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.80000E+01  -0.56000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.80000E+01  -0.56000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.80000E+01  -0.56000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.80000E+01  -0.56000E+02   for N,Z=   92.0000   64.0000 it= 2
-  24B ************ 0.10  0.514  4294.421847   16.0   3.871   3.872 |   -0.000   0.000  -0.000   0.000 | 1000.0001000.000   0.191
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
-  25B ************ 0.10 -0.421  2189.036900   20.0   3.788   3.788 |   -0.000   0.000  -0.000   0.000 | 1000.0001000.000   0.179
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
-  26B ************ 0.11  0.479  4946.845730   20.0   3.590   3.589 |   -0.000  -0.000  -0.000  -0.000 | 1000.0001000.000   0.219
- Low accuracy= 0.80000E+01  -0.84000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.80000E+01  -0.84000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.80000E+01  -0.84000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.80000E+01  -0.84000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.80000E+01  -0.84000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.80000E+01  -0.84000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.80000E+01  -0.84000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.80000E+01  -0.84000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.80000E+01  -0.84000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.80000E+01  -0.84000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.80000E+01  -0.84000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.80000E+01  -0.84000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.80000E+01  -0.84000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.80000E+01  -0.84000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.80000E+01  -0.84000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.80000E+01  -0.84000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.80000E+01  -0.84000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.80000E+01  -0.84000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.80000E+01  -0.84000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.80000E+01  -0.84000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.80000E+01  -0.84000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.80000E+01  -0.56000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.80000E+01  -0.56000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.80000E+01  -0.56000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.80000E+01  -0.56000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.80000E+01  -0.56000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.80000E+01  -0.56000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.80000E+01  -0.56000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.80000E+01  -0.56000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.80000E+01  -0.56000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.80000E+01  -0.56000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.80000E+01  -0.56000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.80000E+01  -0.56000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.80000E+01  -0.56000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.80000E+01  -0.56000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.80000E+01  -0.56000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.80000E+01  -0.56000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.80000E+01  -0.56000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.80000E+01  -0.56000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.80000E+01  -0.56000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.80000E+01  -0.56000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.80000E+01  -0.56000E+02   for N,Z=   92.0000   64.0000 it= 2
-  27B ************ 0.10  0.514  4221.105822   16.0   3.872   3.872 |   -0.000   0.000  -0.000   0.000 | 1000.0001000.000   0.166
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
-  28B ************ 0.10 -0.421  2247.669100   20.0   3.786   3.787 |   -0.000   0.000  -0.000   0.000 | 1000.0001000.000   0.185
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
-  29B ************ 0.11  0.480  4859.497092   20.0   3.588   3.587 |   -0.000  -0.000  -0.000  -0.000 | 1000.0001000.000   0.199
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
-  30B ************ 0.13  0.480  4822.418604   20.0   3.587   3.587 |   -0.000  -0.000  -0.000  -0.000 | 1000.0001000.000   0.177
- Low accuracy= 0.80000E+01  -0.84000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.80000E+01  -0.84000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.80000E+01  -0.84000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.80000E+01  -0.84000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.80000E+01  -0.84000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.80000E+01  -0.84000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.80000E+01  -0.84000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.80000E+01  -0.84000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.80000E+01  -0.84000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.80000E+01  -0.84000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.80000E+01  -0.84000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.80000E+01  -0.84000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.80000E+01  -0.84000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.80000E+01  -0.84000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.80000E+01  -0.84000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.80000E+01  -0.84000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.80000E+01  -0.84000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.80000E+01  -0.84000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.80000E+01  -0.84000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.80000E+01  -0.84000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.80000E+01  -0.84000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.80000E+01  -0.56000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.80000E+01  -0.56000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.80000E+01  -0.56000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.80000E+01  -0.56000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.80000E+01  -0.56000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.80000E+01  -0.56000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.80000E+01  -0.56000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.80000E+01  -0.56000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.80000E+01  -0.56000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.80000E+01  -0.56000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.80000E+01  -0.56000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.80000E+01  -0.56000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.80000E+01  -0.56000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.80000E+01  -0.56000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.80000E+01  -0.56000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.80000E+01  -0.56000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.80000E+01  -0.56000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.80000E+01  -0.56000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.80000E+01  -0.56000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.80000E+01  -0.56000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.80000E+01  -0.56000E+02   for N,Z=   92.0000   64.0000 it= 2
-  31B ************ 0.10  0.514  4196.971215   16.0   3.873   3.873 |   -0.000   0.000  -0.000   0.000 | 1000.0001000.000   0.193
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.82000E+02   for N,Z=   92.0000   64.0000 it= 1
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
- Low accuracy= 0.10000E+02  -0.54000E+02   for N,Z=   92.0000   64.0000 it= 2
-  32L ************ 0.10 -0.421  2175.450647   20.0   3.788   3.788 |   -0.000   0.000  -0.000   0.000 | 1000.0001000.000   0.216
- Low accuracy=         NaN           NaN   for N,Z=   92.0000   64.0000 it= 1
- The algorithm failed to compute eigenvalues.
- I am           0  and I am working on array            1           1
- The algorithm failed to compute eigenvalues.
- I am           0  and I am working on array            2           1
- The algorithm failed to compute eigenvalues.
- I am           0  and I am working on array            3           1
+   1L  97.90854210 0.30  0.010     0.000000    0.0   0.000   0.000 |   -2.000   1.000  -2.000   1.000 |   -7.000  -7.000   0.000
+   2B  50.17152559 0.10  0.015  -834.221379  156.0   5.234   4.884 |    0.012  -0.000   0.006  -0.000 |  -14.431 -27.446  37.384
+   3B  35.21436559 0.11  0.086  -483.198245  156.0   5.005   4.984 |    0.001  -0.000   0.001  -0.000 |   -5.916 -12.222  16.539
+   4B 113.41343263 0.10  0.083  7241.686806  156.0   4.925   4.081 |    0.000   0.000   0.000   0.000 |  -13.393 -10.879  16.030
+   5B  37.52625167 0.11  0.269  -751.342086  156.0   5.434   4.837 |    0.000  -0.000   0.000  -0.000 |   -6.505  -5.769  15.225
+   6B   9.65235985 0.13  0.323 -1169.253171  156.0   5.498   4.989 |    0.000  -0.000   0.000  -0.000 |   -5.960  -5.672  15.782
+   7B   9.04881720 0.14  0.316 -1198.178299  156.0   5.402   5.006 |    0.000  -0.000   0.000  -0.000 |   -6.350  -5.771  15.336
+   8B   6.36860496 0.16  0.320 -1237.384544  156.0   5.390   5.007 |    0.000  -0.000   0.000  -0.000 |   -6.725  -6.111  15.177
+   9B   4.94033633 0.18  0.325 -1250.854365  156.0   5.313   5.049 |    0.000  -0.000   0.000  -0.000 |   -7.138  -6.396  15.558
+  10B   3.63369366 0.21  0.328 -1267.044752  156.0   5.264   5.088 |    0.000  -0.000   0.000  -0.000 |   -7.325  -6.759  15.405
+  11B   4.46939376 0.10  0.337 -1274.107474  156.0   5.259   5.090 |    0.000  -0.000   0.000  -0.000 |   -7.365  -6.939  16.587
+  12B   6.26167643 0.10  0.349 -1267.270635  156.0   5.260   5.114 |    0.000  -0.000   0.000  -0.000 |   -7.331  -6.878  15.146
+  13B   6.00230628 0.11  0.348 -1253.616744  156.0   5.252   5.124 |    0.000  -0.000   0.000  -0.000 |   -7.251  -6.970  16.437
+  14B   7.18147679 0.10  0.363 -1256.950946  156.0   5.268   5.121 |    0.000  -0.000   0.000  -0.000 |   -7.267  -6.931  16.068
+  15B   6.31072673 0.11  0.360 -1263.558663  156.0   5.268   5.120 |    0.000  -0.000   0.000  -0.000 |   -7.226  -6.945  14.382
+  16B   7.20471561 0.10  0.362 -1258.018258  156.0   5.270   5.121 |    0.000  -0.000   0.000  -0.000 |   -7.242  -6.840  15.133
+  17B   6.48437757 0.11  0.360 -1260.735792  156.0   5.267   5.122 |    0.000  -0.000   0.000  -0.000 |   -7.215  -6.855  14.750
+  18B   7.10247799 0.10  0.370 -1235.396038  156.0   5.272   5.136 |    0.000  -0.000   0.000  -0.000 |   -7.104  -6.869  14.956
+  19L   8.96819038 0.10  0.374 -1252.240496  156.0   5.267   5.150 |    0.000  -0.000   0.000  -0.000 |   -7.054  -6.915  14.577
+  20B  15.88596909 0.10  0.336 -1183.149788  156.0   5.241   5.092 |    0.000  -0.000   0.000  -0.000 |   -7.217  -6.996  14.457
+  21B  11.36743912 0.11  0.351 -1171.602278  156.0   5.238   5.099 |    0.000  -0.000   0.000  -0.000 |   -7.440  -7.039  13.890
+  22B   5.28639831 0.13  0.376 -1260.369682  156.0   5.270   5.142 |    0.000  -0.000   0.000  -0.000 |   -7.190  -7.183  16.195
+  23B  11.48498208 0.10  0.357 -1179.393312  156.0   5.267   5.105 |    0.000  -0.000   0.000  -0.000 |   -7.587  -7.289  15.916
+  24B   7.81109210 0.11  0.391 -1241.965280  156.0   5.299   5.123 |    0.000   0.000   0.000   0.000 |   -7.338  -7.206  16.098
+  25B   8.41109820 0.10  0.386 -1205.542105  156.0   5.270   5.142 |    0.000   0.000   0.000   0.000 |   -7.379  -7.351  16.996
+  26B  12.58442766 0.10  0.404 -1222.347680  156.0   5.305   5.139 |    0.000   0.000   0.000   0.000 |   -7.739  -7.194  15.083
+  27B   8.10444800 0.11  0.423 -1224.599596  156.0   5.324   5.168 |    0.000   0.000   0.000   0.000 |   -7.888  -7.336  16.175
+  28B   7.50060827 0.13  0.343 -1240.841438  156.0   5.256   5.088 |    0.000  -0.000   0.000  -0.000 |   -7.247  -7.124  17.667
+  29B   6.36475301 0.14  0.302 -1239.218359  156.0   5.223   5.097 |    0.000  -0.000   0.000  -0.000 |   -6.937  -6.942  16.310
+  30B   9.61966604 0.10  0.289 -1221.257266  156.0   5.217   5.064 |    0.000  -0.000   0.000  -0.000 |   -6.466  -6.688  20.123
+  31B  10.13053642 0.10  0.213 -1165.297930  156.0   5.151   5.048 |    0.000  -0.000   0.000  -0.000 |   -6.337  -7.317  15.933
+  32B   5.45573250 0.11  0.189 -1246.208474  156.0   5.168   5.002 |    0.000  -0.000   0.000  -0.000 |   -5.862  -7.026  20.194
+  33B   5.18697172 0.13  0.219 -1257.007574  156.0   5.165   5.038 |    0.000  -0.000   0.000  -0.000 |   -5.916  -6.803  18.097
+  34B   3.18158995 0.14  0.181 -1269.297039  156.0   5.159   5.010 |    0.000  -0.000   0.000  -0.000 |   -5.785  -6.924  21.702
+  35B   3.69177631 0.10  0.184 -1268.688866  156.0   5.159   5.020 |    0.000  -0.000   0.000  -0.000 |   -5.720  -6.843  19.947
+  36B   1.26839997 0.11  0.177 -1271.791561  156.0   5.158   5.009 |    0.000  -0.000   0.000  -0.000 |   -5.719  -6.845  15.278
+  37B   1.40381867 0.10  0.181 -1272.814567  156.0   5.158   5.019 |    0.000  -0.000   0.000  -0.000 |   -5.783  -6.826  31.156
+  38B   1.65843782 0.10  0.164 -1270.417157  156.0   5.156   5.007 |    0.000  -0.000   0.000  -0.000 |   -5.765  -6.885  27.209
+  39L   2.34695004 0.10  0.156 -1268.108589  156.0   5.156   5.004 |    0.000  -0.000   0.000  -0.000 |   -5.708  -6.895  20.386
+  40B   4.61292655 0.10  0.174 -1260.110068  156.0   5.154   5.023 |    0.000  -0.000   0.000  -0.000 |   -5.681  -6.860  17.633
+  41L   2.25133161 0.11  0.157 -1269.126420  156.0   5.156   5.003 |    0.000  -0.000   0.000  -0.000 |   -5.651  -6.898  15.495
+  42B   2.62028007 0.10  0.172 -1263.838639  156.0   5.156   5.021 |    0.000  -0.000   0.000  -0.000 |   -5.710  -6.832  16.141
+  43B   2.17421405 0.11  0.148 -1267.819156  156.0   5.149   5.005 |    0.000  -0.000   0.000  -0.000 |   -5.613  -6.879  16.270
+  44B   2.90625894 0.10  0.146 -1266.931948  156.0   5.152   5.005 |    0.000  -0.000   0.000  -0.000 |   -5.572  -6.852  15.504
+  45B   2.51444594 0.11  0.141 -1269.484372  156.0   5.149   5.004 |    0.000  -0.000   0.000  -0.000 |   -5.535  -6.845  15.319
+  46B   3.44445825 0.10  0.127 -1264.901182  156.0   5.148   5.003 |    0.000  -0.000   0.000  -0.000 |   -5.522  -6.836  22.571
+  47B   2.09890594 0.11  0.118 -1269.593214  156.0   5.148   4.999 |    0.000  -0.000   0.000  -0.000 |   -5.534  -6.771  22.751
+  48B   3.14115335 0.10  0.156 -1265.600117  156.0   5.154   5.007 |    0.000  -0.000   0.000  -0.000 |   -5.693  -6.792  24.932
+  49B   3.46051467 0.10  0.163 -1266.697899  156.0   5.161   5.010 |    0.000  -0.000   0.000  -0.000 |   -5.821  -6.884  24.929
+  50B   2.93760056 0.11  0.173 -1264.776904  156.0   5.158   5.022 |    0.000  -0.000   0.000  -0.000 |   -5.867  -7.056  22.351
+  51B   4.61847422 0.10  0.142 -1248.506135  156.0   5.152   4.998 |    0.000  -0.000   0.000  -0.000 |   -5.722  -6.777  21.508
+  52B   2.54920297 0.11  0.153 -1269.913799  156.0   5.155   5.019 |    0.000   0.000   0.000   0.000 |   -5.847  -6.942  25.375
+  53L   1.12690275 0.13  0.166 -1272.712385  156.0   5.160   5.025 |    0.000   0.000   0.000   0.000 |   -5.937  -6.950  19.979
+  54B   2.42979299 0.10  0.181 -1269.786592  156.0   5.176   5.024 |    0.000   0.000   0.000   0.000 |   -6.009  -6.961  16.794
+  55B   2.19421679 0.11  0.168 -1269.379573  156.0   5.170   5.012 |    0.000   0.000   0.000   0.000 |   -6.015  -6.936  16.782
+  56B   1.21206624 0.13  0.190 -1273.652917  156.0   5.174   5.035 |    0.000   0.000   0.000   0.000 |   -6.073  -6.969  17.214
+  57B   1.94204285 0.10  0.186 -1271.775715  156.0   5.169   5.036 |    0.000  -0.000   0.000  -0.000 |   -6.113  -7.058  20.674
+  58B   1.69295438 0.11  0.192 -1273.669607  156.0   5.179   5.027 |    0.000   0.000   0.000   0.000 |   -6.144  -7.002  18.380
+  59B   1.12341132 0.13  0.200 -1274.687257  156.0   5.178   5.037 |    0.000   0.000   0.000   0.000 |   -6.155  -7.029  21.152
+  60B   0.93429106 0.14  0.203 -1275.247675  156.0   5.178   5.039 |    0.000   0.000   0.000   0.000 |   -6.169  -7.029  18.005
+  61B   1.04305612 0.10  0.219 -1276.115788  156.0   5.181   5.043 |    0.000  -0.000   0.000  -0.000 |   -6.315  -7.018  19.981
+  62B   0.70447208 0.11  0.219 -1276.678571  156.0   5.183   5.041 |    0.000  -0.000   0.000  -0.000 |   -6.332  -7.029  18.696
+  63B   1.61345681 0.10  0.221 -1275.974758  156.0   5.180   5.044 |    0.000  -0.000   0.000  -0.000 |   -6.299  -7.019  19.200
+  64B   0.75308246 0.11  0.225 -1276.697258  156.0   5.183   5.042 |    0.000  -0.000   0.000  -0.000 |   -6.358  -7.017  19.871
+  65B   0.71426089 0.13  0.222 -1276.927311  156.0   5.181   5.043 |    0.000  -0.000   0.000  -0.000 |   -6.315  -7.017  21.505
+  66B   1.03522062 0.10  0.224 -1276.445078  156.0   5.181   5.044 |    0.000  -0.000   0.000  -0.000 |   -6.329  -7.031  22.807
+  67B   0.74839299 0.11  0.225 -1277.016792  156.0   5.182   5.041 |    0.000  -0.000   0.000  -0.000 |   -6.367  -7.003  18.955
+  68B   0.31670791 0.13  0.223 -1277.139671  156.0   5.181   5.041 |    0.000   0.000   0.000   0.000 |   -6.339  -7.001  14.473
+  69B   0.43643088 0.10  0.226 -1277.402129  156.0   5.182   5.042 |    0.000  -0.000   0.000  -0.000 |   -6.360  -7.008  17.772
+  70B   0.44058081 0.10  0.226 -1277.435828  156.0   5.182   5.042 |    0.000  -0.000   0.000  -0.000 |   -6.360  -7.005  25.190
+  71B   0.44155720 0.10  0.226 -1277.376170  156.0   5.182   5.042 |    0.000  -0.000   0.000  -0.000 |   -6.359  -7.008  18.256
+  72B   0.40175326 0.11  0.226 -1277.318807  156.0   5.181   5.042 |    0.000  -0.000   0.000  -0.000 |   -6.347  -7.006  15.691
+  73B   0.42329903 0.10  0.226 -1277.237750  156.0   5.181   5.041 |    0.000  -0.000   0.000  -0.000 |   -6.332  -6.991  16.649
+  74B   0.62274616 0.10  0.226 -1277.238685  156.0   5.181   5.042 |    0.000   0.000   0.000   0.000 |   -6.332  -6.999  19.127
+  75B   0.69954316 0.10  0.225 -1277.028549  156.0   5.180   5.042 |    0.000   0.000   0.000   0.000 |   -6.323  -6.998  16.919
+  76B   0.82615497 0.10  0.225 -1277.011678  156.0   5.180   5.040 |    0.000   0.000   0.000   0.000 |   -6.321  -6.970  15.367
+  77B   0.51127217 0.11  0.226 -1277.187593  156.0   5.180   5.040 |    0.000  -0.000   0.000  -0.000 |   -6.333  -6.974  15.212
+  78B   0.46369155 0.13  0.225 -1277.298008  156.0   5.179   5.040 |    0.000   0.000   0.000   0.000 |   -6.309  -6.957  15.153
+  79B   0.46512809 0.10  0.225 -1277.347729  156.0   5.179   5.040 |    0.000   0.000   0.000   0.000 |   -6.309  -6.963  15.002
+  80B   0.46963946 0.10  0.225 -1277.380532  156.0   5.179   5.040 |    0.000   0.000   0.000   0.000 |   -6.304  -6.961  14.852
+  81B   0.44591762 0.11  0.224 -1277.189522  156.0   5.178   5.039 |    0.000   0.000   0.000   0.000 |   -6.259  -6.943  14.865
+  82B   0.41499997 0.13  0.223 -1277.082140  156.0   5.177   5.038 |    0.000   0.000   0.000   0.000 |   -6.228  -6.936  14.979
+  83B   0.51336014 0.10  0.221 -1276.929899  156.0   5.176   5.037 |    0.000   0.000   0.000   0.000 |   -6.226  -6.926  15.264
+  84B   1.03842568 0.10  0.213 -1275.987911  156.0   5.172   5.034 |    0.000   0.000   0.000   0.000 |   -6.147  -6.908  17.334
+  85B   0.87496872 0.11  0.213 -1276.180339  156.0   5.172   5.031 |    0.000   0.000   0.000   0.000 |   -6.107  -6.883  16.211
+  86B   0.36666248 0.13  0.209 -1276.197743  156.0   5.170   5.031 |    0.000   0.000   0.000   0.000 |   -6.079  -6.883  15.888
+  87B   0.28095936 0.14  0.208 -1276.136919  156.0   5.171   5.031 |    0.000   0.000   0.000   0.000 |   -6.082  -6.869  17.339
+  88B   0.25119715 0.16  0.208 -1276.101432  156.0   5.171   5.031 |    0.000  -0.000   0.000  -0.000 |   -6.089  -6.881  21.872
+  89B   0.24602530 0.18  0.207 -1276.049316  156.0   5.170   5.030 |    0.000   0.000   0.000   0.000 |   -6.088  -6.889  18.724
+  90B   0.39078532 0.10  0.204 -1275.778964  156.0   5.169   5.030 |    0.000  -0.000   0.000  -0.000 |   -6.088  -6.891  17.430
+  91B   0.22521438 0.11  0.205 -1275.910760  156.0   5.170   5.031 |    0.000  -0.000   0.000  -0.000 |   -6.092  -6.893  19.614
+  92B   0.15368219 0.13  0.204 -1275.890648  156.0   5.170   5.030 |    0.000  -0.000   0.000  -0.000 |   -6.095  -6.891  17.080
+  93B   0.13304494 0.14  0.204 -1275.895056  156.0   5.170   5.031 |    0.000  -0.000   0.000  -0.000 |   -6.098  -6.887  18.751
+  94B   0.11896694 0.16  0.204 -1275.895673  156.0   5.170   5.030 |    0.000  -0.000   0.000  -0.000 |   -6.098  -6.888  17.732
+  95B   0.13984997 0.10  0.204 -1275.881939  156.0   5.170   5.031 |    0.000  -0.000   0.000  -0.000 |   -6.099  -6.886  22.987
+  96B   0.07740801 0.11  0.204 -1275.915326  156.0   5.171   5.031 |    0.000  -0.000   0.000  -0.000 |   -6.107  -6.882  31.469
+  97B   0.07745192 0.10  0.204 -1275.917296  156.0   5.171   5.031 |    0.000  -0.000   0.000  -0.000 |   -6.107  -6.884  23.219
+  98B   0.07806483 0.10  0.204 -1275.914507  156.0   5.171   5.031 |    0.000  -0.000   0.000  -0.000 |   -6.108  -6.884  21.473
+  99B   0.16401649 0.10  0.205 -1275.974115  156.0   5.172   5.031 |    0.000  -0.000   0.000  -0.000 |   -6.117  -6.884  16.035
+ 100B   0.08680650 0.11  0.205 -1275.964836  156.0   5.171   5.031 |    0.000  -0.000   0.000  -0.000 |   -6.113  -6.885  16.363
+ 101L   0.07619961 0.13  0.205 -1275.981107  156.0   5.171   5.031 |    0.000  -0.000   0.000  -0.000 |   -6.115  -6.884  15.390
+ 102B   0.11635639 0.10  0.205 -1275.992074  156.0   5.171   5.031 |    0.000  -0.000   0.000  -0.000 |   -6.114  -6.882  17.076
+ 103B   0.18624565 0.10  0.208 -1276.185126  156.0   5.172   5.032 |    0.000   0.000   0.000   0.000 |   -6.132  -6.877  21.469
+ 104B   0.17243817 0.11  0.210 -1276.302358  156.0   5.172   5.033 |    0.000   0.000   0.000   0.000 |   -6.148  -6.881  35.870
+ 105B   0.11380137 0.13  0.211 -1276.403812  156.0   5.173   5.033 |    0.000   0.000   0.000   0.000 |   -6.152  -6.876  23.627
+ 106B   0.18315682 0.10  0.210 -1276.304789  156.0   5.173   5.033 |    0.000   0.000   0.000   0.000 |   -6.141  -6.874  23.317
+ 107B   0.10944666 0.11  0.211 -1276.372442  156.0   5.173   5.033 |    0.000   0.000   0.000   0.000 |   -6.148  -6.871  21.918
+ 108B   0.01828043 0.13  0.211 -1276.404440  156.0   5.173   5.033 |    0.000   0.000   0.000   0.000 |   -6.150  -6.872  17.305
+ 109B   0.00632882 0.14  0.211 -1276.409181  156.0   5.173   5.033 |    0.000   0.000   0.000   0.000 |   -6.150  -6.872  16.392
+ 110B   0.00848487 0.10  0.211 -1276.398411  156.0   5.173   5.033 |    0.000   0.000   0.000   0.000 |   -6.149  -6.872  16.254
+ 111B   0.00492231 0.11  0.211 -1276.399523  156.0   5.173   5.033 |    0.000   0.000   0.000   0.000 |   -6.150  -6.872  16.959
+ 112B   0.00565169 0.10  0.211 -1276.402552  156.0   5.173   5.033 |    0.000   0.000   0.000   0.000 |   -6.150  -6.871  16.806
+ 113B   0.00788033 0.10  0.211 -1276.400184  156.0   5.173   5.033 |    0.000   0.000   0.000   0.000 |   -6.149  -6.871  16.271
+ 114B   0.00692492 0.11  0.211 -1276.394334  156.0   5.173   5.033 |    0.000  -0.000   0.000  -0.000 |   -6.149  -6.870  17.597
+ 115B   0.00971097 0.10  0.211 -1276.398029  156.0   5.173   5.033 |    0.000   0.000   0.000   0.000 |   -6.149  -6.870  21.052
+ 116B   0.00663584 0.11  0.211 -1276.394808  156.0   5.173   5.033 |    0.000  -0.000   0.000  -0.000 |   -6.149  -6.870  25.307
+ 117B   0.01024692 0.10  0.211 -1276.392099  156.0   5.173   5.033 |    0.000   0.000   0.000   0.000 |   -6.149  -6.870  25.936
+ 118B   0.00787996 0.11  0.211 -1276.387441  156.0   5.173   5.033 |    0.000  -0.000   0.000  -0.000 |   -6.148  -6.869  28.308
+ 119B   0.00619953 0.13  0.211 -1276.386951  156.0   5.173   5.033 |    0.000  -0.000   0.000  -0.000 |   -6.148  -6.869  27.589
+ 120B   0.00974452 0.10  0.211 -1276.381325  156.0   5.173   5.033 |    0.000  -0.000   0.000  -0.000 |   -6.148  -6.868  18.190
+ 121B   0.00910947 0.11  0.211 -1276.380282  156.0   5.173   5.033 |    0.000  -0.000   0.000  -0.000 |   -6.148  -6.868  15.573
+ 122B   0.00952773 0.10  0.211 -1276.379901  156.0   5.173   5.033 |    0.000  -0.000   0.000  -0.000 |   -6.148  -6.868  15.102
+ 123B   0.00805744 0.11  0.211 -1276.377112  156.0   5.173   5.033 |    0.000   0.000   0.000   0.000 |   -6.148  -6.868  17.437
+ 124B   0.00800420 0.13  0.211 -1276.376647  156.0   5.173   5.033 |    0.000  -0.000   0.000  -0.000 |   -6.148  -6.868  15.655
+ 125B   0.00776781 0.14  0.210 -1276.374416  156.0   5.173   5.033 |    0.000  -0.000   0.000  -0.000 |   -6.148  -6.868  17.107
+ 126B   0.00761899 0.16  0.210 -1276.375623  156.0   5.173   5.033 |    0.000  -0.000   0.000  -0.000 |   -6.148  -6.868  16.956
+ 127B   0.00822356 0.10  0.210 -1276.373153  156.0   5.173   5.033 |    0.000   0.000   0.000   0.000 |   -6.148  -6.868  16.520
+ 128B   0.00595856 0.11  0.210 -1276.369733  156.0   5.173   5.033 |    0.000   0.000   0.000   0.000 |   -6.147  -6.867  17.910
+ 129B   0.00970564 0.10  0.210 -1276.372119  156.0   5.173   5.033 |    0.000  -0.000   0.000  -0.000 |   -6.148  -6.867  18.585
+ 130B   0.00752893 0.11  0.210 -1276.369447  156.0   5.173   5.033 |    0.000   0.000   0.000   0.000 |   -6.148  -6.867  16.901
+ 131B   0.00819265 0.10  0.210 -1276.368146  156.0   5.173   5.033 |    0.000   0.000   0.000   0.000 |   -6.148  -6.867  27.914
+ 132B   0.00672463 0.11  0.210 -1276.367640  156.0   5.173   5.033 |    0.000   0.000   0.000   0.000 |   -6.148  -6.867  16.994
+ 133B   0.00627039 0.13  0.210 -1276.367693  156.0   5.173   5.033 |    0.000   0.000   0.000   0.000 |   -6.148  -6.867  17.010
+ 134B   0.00769880 0.10  0.210 -1276.367930  156.0   5.173   5.033 |    0.000   0.000   0.000   0.000 |   -6.148  -6.867  22.558
+ 135B   0.00847098 0.10  0.210 -1276.368926  156.0   5.173   5.033 |    0.000   0.000   0.000   0.000 |   -6.148  -6.867  17.259
+ 136B   0.00829319 0.11  0.210 -1276.367004  156.0   5.173   5.033 |    0.000   0.000   0.000   0.000 |   -6.147  -6.867  19.379
+ 137B   0.00847655 0.10  0.210 -1276.366811  156.0   5.173   5.033 |    0.000   0.000   0.000  -0.000 |   -6.148  -6.867  29.109
+ 138B   0.00879409 0.10  0.210 -1276.367391  156.0   5.173   5.033 |    0.000  -0.000   0.000  -0.000 |   -6.148  -6.866  19.984
+ 139B   0.00426863 0.11  0.210 -1276.366796  156.0   5.173   5.033 |    0.000  -0.000   0.000  -0.000 |   -6.148  -6.866  17.344
+ 140B   0.00368231 0.13  0.210 -1276.367536  156.0   5.173   5.033 |    0.000  -0.000   0.000  -0.000 |   -6.148  -6.866  15.754
+ 141B   0.00826653 0.10  0.210 -1276.369902  156.0   5.173   5.033 |    0.000  -0.000   0.000  -0.000 |   -6.149  -6.866  17.099
+ 142B   0.00341621 0.11  0.210 -1276.369595  156.0   5.173   5.033 |    0.000  -0.000   0.000  -0.000 |   -6.149  -6.866  17.453
+ 143B   0.00805561 0.10  0.210 -1276.370173  156.0   5.173   5.033 |    0.000   0.000   0.000   0.000 |   -6.149  -6.866  15.712
+ 144B   0.00743380 0.11  0.210 -1276.370470  156.0   5.173   5.033 |    0.000   0.000   0.000   0.000 |   -6.149  -6.866  17.276
+ 145B   0.00448938 0.13  0.210 -1276.370989  156.0   5.173   5.033 |    0.000   0.000   0.000  -0.000 |   -6.149  -6.866  17.267
+ 146B   0.00295240 0.14  0.210 -1276.373354  156.0   5.173   5.033 |    0.000  -0.000   0.000  -0.000 |   -6.149  -6.866  17.958
+ 147B   0.00251271 0.16  0.211 -1276.377738  156.0   5.173   5.033 |    0.000  -0.000   0.000   0.000 |   -6.150  -6.866  18.324
+ 148B   0.00630441 0.10  0.211 -1276.381895  156.0   5.173   5.033 |    0.000   0.000   0.000   0.000 |   -6.151  -6.866  18.710
+ 149B   0.00353201 0.11  0.211 -1276.380988  156.0   5.173   5.033 |    0.000   0.000   0.000   0.000 |   -6.150  -6.866  16.604
+ 150B   0.00301456 0.13  0.211 -1276.380063  156.0   5.173   5.033 |    0.000   0.000   0.000   0.000 |   -6.150  -6.866  18.961
+ 151B   0.00260837 0.14  0.211 -1276.383991  156.0   5.173   5.033 |    0.000  -0.000   0.000  -0.000 |   -6.151  -6.866  19.216
+ 152B   0.00443575 0.10  0.211 -1276.386952  156.0   5.173   5.033 |    0.000   0.000   0.000   0.000 |   -6.151  -6.866  22.460
+ 153B   0.00260230 0.11  0.211 -1276.386830  156.0   5.173   5.033 |    0.000  -0.000   0.000  -0.000 |   -6.151  -6.866  15.813
+ 154B   0.00323506 0.10  0.211 -1276.386982  156.0   5.173   5.033 |    0.000  -0.000   0.000   0.000 |   -6.151  -6.866  32.279
+ 155B   0.00246790 0.11  0.211 -1276.388078  156.0   5.173   5.033 |    0.000  -0.000   0.000  -0.000 |   -6.151  -6.866  21.453
+ 156B   0.00171420 0.13  0.211 -1276.387754  156.0   5.173   5.033 |    0.000   0.000   0.000   0.000 |   -6.151  -6.866  17.336
+ 157B   0.00187998 0.10  0.211 -1276.387205  156.0   5.173   5.033 |    0.000  -0.000   0.000   0.000 |   -6.151  -6.865  20.258
+ 158B   0.00153314 0.11  0.211 -1276.387685  156.0   5.173   5.033 |    0.000   0.000   0.000  -0.000 |   -6.151  -6.865  19.037
+ 159B   0.00439351 0.10  0.211 -1276.387792  156.0   5.173   5.033 |    0.000   0.000   0.000   0.000 |   -6.151  -6.865  15.286
+ 160B   0.00141802 0.11  0.211 -1276.387886  156.0   5.173   5.033 |    0.000  -0.000   0.000   0.000 |   -6.151  -6.865  16.118
+ 161B   0.00140412 0.13  0.211 -1276.387297  156.0   5.173   5.033 |    0.000  -0.000   0.000   0.000 |   -6.151  -6.865  17.221
+ 162B   0.00133229 0.14  0.211 -1276.387289  156.0   5.173   5.033 |    0.000  -0.000   0.000  -0.000 |   -6.151  -6.865  15.912
+ 163B   0.00148091 0.10  0.211 -1276.386363  156.0   5.173   5.033 |    0.000  -0.000   0.000  -0.000 |   -6.151  -6.865  16.099
+ 164B   0.00121254 0.11  0.211 -1276.386299  156.0   5.173   5.033 |    0.000  -0.000   0.000   0.000 |   -6.151  -6.865  15.759
+ 165B   0.00168012 0.10  0.211 -1276.384141  156.0   5.173   5.033 |    0.000  -0.000   0.000   0.000 |   -6.150  -6.865  20.932
+ 166B   0.00308725 0.10  0.211 -1276.382800  156.0   5.173   5.033 |    0.000  -0.000   0.000  -0.000 |   -6.150  -6.865  21.293
+ 167B   0.00186474 0.11  0.211 -1276.383440  156.0   5.173   5.033 |    0.000  -0.000   0.000   0.000 |   -6.150  -6.865  22.392
+ 168B   0.00298486 0.10  0.211 -1276.382754  156.0   5.173   5.033 |    0.000  -0.000   0.000   0.000 |   -6.150  -6.865  18.085
+ 169B   0.00151975 0.11  0.211 -1276.381865  156.0   5.173   5.033 |    0.000   0.000   0.000  -0.000 |   -6.150  -6.865  18.712
+ 170B   0.00211246 0.10  0.211 -1276.381527  156.0   5.173   5.033 |    0.000   0.000   0.000   0.000 |   -6.150  -6.865  17.512
+ 171B   0.00156649 0.11  0.211 -1276.381509  156.0   5.173   5.033 |    0.000  -0.000   0.000   0.000 |   -6.150  -6.865  16.400
+ 172B   0.00153169 0.13  0.211 -1276.381827  156.0   5.173   5.033 |    0.000  -0.000   0.000   0.000 |   -6.150  -6.865  18.621
+ 173B   0.00199870 0.10  0.211 -1276.380372  156.0   5.173   5.033 |    0.000  -0.000   0.000   0.000 |   -6.150  -6.865  17.139
+ 174B   0.00183641 0.11  0.211 -1276.380151  156.0   5.173   5.033 |    0.000  -0.000   0.000   0.000 |   -6.150  -6.865  20.744
+ 175B   0.00163336 0.13  0.211 -1276.380084  156.0   5.173   5.033 |    0.000  -0.000   0.000  -0.000 |   -6.150  -6.865  26.191
+ 176B   0.00141818 0.14  0.211 -1276.380431  156.0   5.173   5.033 |    0.000  -0.000   0.000  -0.000 |   -6.150  -6.865  19.975
+ 177B   0.00207591 0.10  0.211 -1276.380413  156.0   5.173   5.033 |    0.000   0.000   0.000   0.000 |   -6.150  -6.865  20.405
+ 178B   0.00197179 0.11  0.211 -1276.379499  156.0   5.173   5.033 |    0.000  -0.000   0.000   0.000 |   -6.150  -6.865  21.129
+ 179B   0.00133831 0.13  0.211 -1276.380060  156.0   5.173   5.033 |    0.000  -0.000   0.000   0.000 |   -6.150  -6.865  23.330
+ 180B   0.00187503 0.10  0.211 -1276.379737  156.0   5.173   5.033 |    0.000  -0.000   0.000   0.000 |   -6.150  -6.865  20.482
+ 181B   0.00274008 0.10  0.211 -1276.379229  156.0   5.173   5.033 |    0.000  -0.000   0.000   0.000 |   -6.150  -6.865  20.215
+ 182B   0.00126365 0.11  0.211 -1276.379497  156.0   5.173   5.033 |    0.000  -0.000   0.000   0.000 |   -6.150  -6.865  17.508
+ 183B   0.00128699 0.10  0.211 -1276.379215  156.0   5.173   5.033 |    0.000  -0.000   0.000   0.000 |   -6.150  -6.865  21.914
+ 184B   0.00126056 0.11  0.211 -1276.379267  156.0   5.173   5.033 |    0.000   0.000   0.000   0.000 |   -6.150  -6.865  18.746
+ 185B   0.00116699 0.13  0.211 -1276.379074  156.0   5.173   5.033 |    0.000   0.000   0.000   0.000 |   -6.150  -6.865  23.379
+ 186B   0.00076562 0.14  0.211 -1276.379015  156.0   5.173   5.033 |    0.000   0.000   0.000   0.000 |   -6.150  -6.865  23.270
+ 187B   0.00175833 0.10  0.211 -1276.379444  156.0   5.173   5.033 |    0.000  -0.000   0.000   0.000 |   -6.150  -6.865  21.590
+ 188B   0.00137072 0.11  0.211 -1276.379016  156.0   5.173   5.033 |    0.000  -0.000   0.000   0.000 |   -6.150  -6.865  17.914
+ 189B   0.00102353 0.13  0.211 -1276.378958  156.0   5.173   5.033 |    0.000  -0.000   0.000   0.000 |   -6.150  -6.865  18.051
+ 190B   0.00080887 0.14  0.211 -1276.378990  156.0   5.173   5.033 |    0.000   0.000   0.000   0.000 |   -6.150  -6.865  18.055
+ 191B   0.00113348 0.10  0.211 -1276.379165  156.0   5.173   5.033 |    0.000   0.000   0.000   0.000 |   -6.150  -6.865  19.314
+ 192B   0.00116380 0.10  0.211 -1276.379191  156.0   5.173   5.033 |    0.000  -0.000   0.000   0.000 |   -6.150  -6.865  14.960
+ 193B   0.00101570 0.11  0.211 -1276.379005  156.0   5.173   5.033 |    0.000   0.000   0.000   0.000 |   -6.150  -6.865  19.498
+ 194B   0.00061575 0.13  0.211 -1276.379107  156.0   5.173   5.033 |    0.000  -0.000   0.000   0.000 |   -6.150  -6.865  14.990
+ 195B   0.00058609 0.14  0.211 -1276.379204  156.0   5.173   5.033 |    0.000  -0.000   0.000   0.000 |   -6.150  -6.865  15.593
+ 196B   0.00169980 0.10  0.211 -1276.380019  156.0   5.173   5.033 |    0.000   0.000   0.000   0.000 |   -6.150  -6.865  18.568
+ 197B   0.00050310 0.11  0.211 -1276.379793  156.0   5.173   5.033 |    0.000  -0.000   0.000   0.000 |   -6.150  -6.865  19.935
+ 198B   0.00071291 0.10  0.211 -1276.380270  156.0   5.173   5.033 |    0.000  -0.000   0.000   0.000 |   -6.150  -6.865  24.560
+ 199B   0.00047268 0.11  0.211 -1276.380523  156.0   5.173   5.033 |    0.000  -0.000   0.000   0.000 |   -6.150  -6.865  18.078
+ 200B   0.00107144 0.10  0.211 -1276.381525  156.0   5.173   5.033 |    0.000  -0.000   0.000  -0.000 |   -6.151  -6.865  19.092
+ 201B   0.00113495 0.10  0.211 -1276.382313  156.0   5.173   5.033 |    0.000   0.000   0.000   0.000 |   -6.151  -6.865  16.033
+ 202B   0.00093969 0.11  0.211 -1276.381679  156.0   5.173   5.033 |    0.000   0.000   0.000  -0.000 |   -6.151  -6.865  18.984
+ 203B   0.00076422 0.13  0.211 -1276.381848  156.0   5.173   5.033 |    0.000  -0.000   0.000  -0.000 |   -6.151  -6.865  21.793
+ 204B   0.00059502 0.14  0.211 -1276.382463  156.0   5.173   5.033 |    0.000   0.000   0.000  -0.000 |   -6.151  -6.865  18.023
+ 205B   0.00080113 0.10  0.211 -1276.382331  156.0   5.173   5.033 |    0.000   0.000   0.000   0.000 |   -6.151  -6.865  15.037
+ 206B   0.00037323 0.11  0.211 -1276.382436  156.0   5.173   5.033 |    0.000   0.000   0.000   0.000 |   -6.151  -6.865  16.665
+ 207B   0.00023699 0.13  0.211 -1276.382527  156.0   5.173   5.033 |    0.000   0.000   0.000   0.000 |   -6.151  -6.865  18.947
+ 208B   0.00015746 0.14  0.211 -1276.382486  156.0   5.173   5.033 |    0.000   0.000   0.000   0.000 |   -6.151  -6.865  21.010
+ 209B   0.00016642 0.10  0.211 -1276.382425  156.0   5.173   5.033 |    0.000   0.000   0.000   0.000 |   -6.151  -6.865  21.412
+ 210B   0.00015423 0.11  0.211 -1276.382437  156.0   5.173   5.033 |    0.000   0.000   0.000   0.000 |   -6.151  -6.865  19.944
+ 211B   0.00032547 0.10  0.211 -1276.382189  156.0   5.173   5.033 |    0.000   0.000   0.000   0.000 |   -6.151  -6.865  18.760
+ 212B   0.00020345 0.11  0.211 -1276.382217  156.0   5.173   5.033 |    0.000   0.000   0.000   0.000 |   -6.151  -6.865  16.580
+ 213B   0.00016646 0.13  0.211 -1276.382208  156.0   5.173   5.033 |    0.000  -0.000   0.000   0.000 |   -6.151  -6.865  17.108
+ 214B   0.00019318 0.10  0.211 -1276.382197  156.0   5.173   5.033 |    0.000   0.000   0.000  -0.000 |   -6.151  -6.865  20.243
+ 215B   0.00029479 0.10  0.211 -1276.382033  156.0   5.173   5.033 |    0.000   0.000   0.000  -0.000 |   -6.151  -6.864  21.329
+ 216B   0.00014331 0.11  0.211 -1276.382124  156.0   5.173   5.033 |    0.000  -0.000   0.000   0.000 |   -6.151  -6.865  17.165
+ 217B   0.00019171 0.10  0.211 -1276.381996  156.0   5.173   5.033 |    0.000   0.000   0.000   0.000 |   -6.151  -6.864  19.914
+ 218B   0.00014892 0.11  0.211 -1276.381738  156.0   5.173   5.033 |    0.000   0.000   0.000   0.000 |   -6.151  -6.864  18.788
+ 219B   0.00041707 0.10  0.211 -1276.381984  156.0   5.173   5.033 |    0.000  -0.000   0.000  -0.000 |   -6.151  -6.864  16.217
+ 220B   0.00021214 0.11  0.211 -1276.381713  156.0   5.173   5.033 |    0.000   0.000   0.000  -0.000 |   -6.151  -6.864  16.927
+ 221B   0.00015023 0.13  0.211 -1276.381738  156.0   5.173   5.033 |    0.000   0.000   0.000  -0.000 |   -6.151  -6.864  17.083
+ 222B   0.00009722 0.14  0.211 -1276.381702  156.0   5.173   5.033 |    0.000   0.000   0.000  -0.000 |   -6.151  -6.864  17.518
+ 223B   0.00014415 0.10  0.211 -1276.381703  156.0   5.173   5.033 |    0.000  -0.000   0.000  -0.000 |   -6.151  -6.864  15.089
+ 224B   0.00009871 0.11  0.211 -1276.381759  156.0   5.173   5.033 |    0.000   0.000   0.000  -0.000 |   -6.151  -6.864  16.175
+ 225B   0.00007330 0.13  0.211 -1276.381692  156.0   5.173   5.033 |    0.000   0.000   0.000  -0.000 |   -6.151  -6.864  16.071
+ 226B   0.00010972 0.10  0.211 -1276.381697  156.0   5.173   5.033 |    0.000   0.000   0.000  -0.000 |   -6.151  -6.864  17.809
+ 227B   0.00007953 0.11  0.211 -1276.381705  156.0   5.173   5.033 |    0.000  -0.000   0.000  -0.000 |   -6.151  -6.864  20.535
+ 228B   0.00011701 0.10  0.211 -1276.381696  156.0   5.173   5.033 |    0.000  -0.000   0.000  -0.000 |   -6.151  -6.864  26.963
+ 229B   0.00018984 0.10  0.211 -1276.381723  156.0   5.173   5.033 |    0.000  -0.000   0.000  -0.000 |   -6.151  -6.864  21.795
+ 230B   0.00005155 0.11  0.211 -1276.381686  156.0   5.173   5.033 |    0.000  -0.000   0.000  -0.000 |   -6.151  -6.864  28.376
+ 231B   0.00006376 0.10  0.211 -1276.381685  156.0   5.173   5.033 |    0.000  -0.000   0.000  -0.000 |   -6.151  -6.864  22.371
+ 232B   0.00005707 0.11  0.211 -1276.381682  156.0   5.173   5.033 |    0.000   0.000   0.000  -0.000 |   -6.151  -6.864  16.988
+ 233B   0.00003166 0.13  0.211 -1276.381683  156.0   5.173   5.033 |    0.000   0.000   0.000  -0.000 |   -6.151  -6.864  28.191
+ 234B   0.00004124 0.10  0.211 -1276.381688  156.0   5.173   5.033 |    0.000   0.000   0.000  -0.000 |   -6.151  -6.864  19.779
+ 235B   0.00004450 0.10  0.211 -1276.381709  156.0   5.173   5.033 |    0.000   0.000   0.000  -0.000 |   -6.151  -6.864  21.418
+ 236B   0.00002434 0.11  0.211 -1276.381707  156.0   5.173   5.033 |    0.000   0.000   0.000  -0.000 |   -6.151  -6.864  18.497
+ 237B   0.00003568 0.10  0.211 -1276.381722  156.0   5.173   5.033 |    0.000   0.000   0.000  -0.000 |   -6.151  -6.864  17.721
+ 238B   0.00002687 0.11  0.211 -1276.381739  156.0   5.173   5.033 |    0.000   0.000   0.000  -0.000 |   -6.151  -6.864  15.944
+ 239B   0.00002624 0.13  0.211 -1276.381762  156.0   5.173   5.033 |    0.000   0.000   0.000  -0.000 |   -6.151  -6.864  15.612
+ 240B   0.00002570 0.14  0.211 -1276.381768  156.0   5.173   5.033 |    0.000  -0.000   0.000  -0.000 |   -6.151  -6.864  16.966
+ 241B   0.00002982 0.10  0.211 -1276.381781  156.0   5.173   5.033 |    0.000   0.000   0.000  -0.000 |   -6.151  -6.864  15.452
+ 242B   0.00001736 0.11  0.211 -1276.381798  156.0   5.173   5.033 |    0.000   0.000   0.000  -0.000 |   -6.151  -6.864  20.485
+ 243B   0.00001867 0.10  0.211 -1276.381784  156.0   5.173   5.033 |    0.000   0.000   0.000  -0.000 |   -6.151  -6.864  15.881
+ 244B   0.00001490 0.11  0.211 -1276.381796  156.0   5.173   5.033 |    0.000   0.000   0.000  -0.000 |   -6.151  -6.864  16.605
+ 245B   0.00002235 0.10  0.211 -1276.381798  156.0   5.173   5.033 |    0.000   0.000   0.000  -0.000 |   -6.151  -6.864  20.753
+ 246B   0.00001437 0.11  0.211 -1276.381798  156.0   5.173   5.033 |    0.000   0.000   0.000  -0.000 |   -6.151  -6.864  16.819
+ 247B   0.00001305 0.13  0.211 -1276.381797  156.0   5.173   5.033 |    0.000  -0.000   0.000   0.000 |   -6.151  -6.864  16.879
+ 248B   0.00001101 0.14  0.211 -1276.381798  156.0   5.173   5.033 |    0.000  -0.000   0.000   0.000 |   -6.151  -6.864  17.580
+ 249B   0.00001126 0.10  0.211 -1276.381799  156.0   5.173   5.033 |    0.000  -0.000   0.000  -0.000 |   -6.151  -6.864  16.063
+ 250B   0.00001137 0.10  0.211 -1276.381799  156.0   5.173   5.033 |    0.000   0.000   0.000   0.000 |   -6.151  -6.864  17.007
+ 251B   0.00001138 0.10  0.211 -1276.381799  156.0   5.173   5.033 |    0.000   0.000   0.000  -0.000 |   -6.151  -6.864  18.126
+ 252B   0.00001502 0.10  0.211 -1276.381797  156.0   5.173   5.033 |    0.000  -0.000   0.000  -0.000 |   -6.151  -6.864  19.423
+ 253B   0.00001209 0.11  0.211 -1276.381797  156.0   5.173   5.033 |    0.000  -0.000   0.000  -0.000 |   -6.151  -6.864  22.241
+ 254B   0.00001521 0.10  0.211 -1276.381791  156.0   5.173   5.033 |    0.000  -0.000   0.000  -0.000 |   -6.151  -6.864  20.448
+ 255B   0.00001179 0.11  0.211 -1276.381795  156.0   5.173   5.033 |    0.000   0.000   0.000   0.000 |   -6.151  -6.864  20.755
+ 256B   0.00001155 0.13  0.211 -1276.381791  156.0   5.173   5.033 |    0.000   0.000   0.000  -0.000 |   -6.151  -6.864  20.971
+ 257B   0.00001127 0.14  0.211 -1276.381789  156.0   5.173   5.033 |    0.000  -0.000   0.000  -0.000 |   -6.151  -6.864  25.394
+ 258B   0.00001057 0.16  0.211 -1276.381785  156.0   5.173   5.033 |    0.000  -0.000   0.000   0.000 |   -6.151  -6.864  19.242
+ 259B   0.00002052 0.10  0.211 -1276.381771  156.0   5.173   5.033 |    0.000  -0.000   0.000   0.000 |   -6.151  -6.864  15.982
+ 260B   0.00001162 0.11  0.211 -1276.381772  156.0   5.173   5.033 |    0.000  -0.000   0.000   0.000 |   -6.151  -6.864  18.699
+ 261B   0.00002665 0.10  0.211 -1276.381757  156.0   5.173   5.033 |    0.000   0.000   0.000   0.000 |   -6.151  -6.864  18.481
+ 262B   0.00001404 0.11  0.211 -1276.381752  156.0   5.173   5.033 |    0.000   0.000   0.000   0.000 |   -6.151  -6.864  21.774
+ 263B   0.00002029 0.10  0.211 -1276.381748  156.0   5.173   5.033 |    0.000   0.000   0.000   0.000 |   -6.151  -6.864  20.457
+ 264B   0.00001342 0.11  0.211 -1276.381756  156.0   5.173   5.033 |    0.000   0.000   0.000  -0.000 |   -6.151  -6.864  17.995
+ 265B   0.00001842 0.10  0.211 -1276.381747  156.0   5.173   5.033 |    0.000  -0.000   0.000  -0.000 |   -6.151  -6.864  16.065
+ 266B   0.00001706 0.11  0.211 -1276.381742  156.0   5.173   5.033 |    0.000   0.000   0.000  -0.000 |   -6.151  -6.864  15.450
+ 267B   0.00001656 0.13  0.211 -1276.381732  156.0   5.173   5.033 |    0.000   0.000   0.000   0.000 |   -6.151  -6.864  16.276
+ 268B   0.00001525 0.14  0.211 -1276.381736  156.0   5.173   5.033 |    0.000   0.000   0.000   0.000 |   -6.151  -6.864  16.725
+ 269B   0.00001236 0.16  0.211 -1276.381733  156.0   5.173   5.033 |    0.000   0.000   0.000  -0.000 |   -6.151  -6.864  16.901
+ 270B   0.00001576 0.10  0.211 -1276.381741  156.0   5.173   5.033 |    0.000   0.000   0.000   0.000 |   -6.151  -6.864  16.893
+ 271B   0.00001544 0.11  0.211 -1276.381728  156.0   5.173   5.033 |    0.000   0.000   0.000  -0.000 |   -6.151  -6.864  19.855
+ 272B   0.00001354 0.13  0.211 -1276.381730  156.0   5.173   5.033 |    0.000   0.000   0.000   0.000 |   -6.151  -6.864  21.397
+ 273B   0.00003104 0.10  0.211 -1276.381731  156.0   5.173   5.033 |    0.000  -0.000   0.000  -0.000 |   -6.151  -6.864  18.920
+ 274B   0.00001839 0.11  0.211 -1276.381724  156.0   5.173   5.033 |    0.000  -0.000   0.000   0.000 |   -6.151  -6.864  19.694
+ 275B   0.00001579 0.13  0.211 -1276.381723  156.0   5.173   5.033 |    0.000  -0.000   0.000   0.000 |   -6.151  -6.864  21.557
+ 276B   0.00001682 0.10  0.211 -1276.381722  156.0   5.173   5.033 |    0.000  -0.000   0.000   0.000 |   -6.151  -6.864  15.067
+ 277B   0.00001237 0.11  0.211 -1276.381726  156.0   5.173   5.033 |    0.000  -0.000   0.000  -0.000 |   -6.151  -6.864  17.411
+ 278B   0.00001511 0.10  0.211 -1276.381720  156.0   5.173   5.033 |    0.000  -0.000   0.000   0.000 |   -6.151  -6.864  18.625
+ 279B   0.00002511 0.10  0.211 -1276.381719  156.0   5.173   5.033 |    0.000   0.000   0.000   0.000 |   -6.151  -6.864  16.642
+ 280B   0.00001602 0.11  0.211 -1276.381719  156.0   5.173   5.033 |    0.000   0.000   0.000  -0.000 |   -6.151  -6.864  19.155
+ 281B   0.00001598 0.13  0.211 -1276.381718  156.0   5.173   5.033 |    0.000   0.000   0.000  -0.000 |   -6.151  -6.864  17.732
+ 282B   0.00003769 0.10  0.211 -1276.381722  156.0   5.173   5.033 |    0.000   0.000   0.000   0.000 |   -6.151  -6.864  15.792
+ 283B   0.00001492 0.11  0.211 -1276.381716  156.0   5.173   5.033 |    0.000   0.000   0.000   0.000 |   -6.151  -6.864  17.967
+ 284B   0.00001512 0.10  0.211 -1276.381717  156.0   5.173   5.033 |    0.000   0.000   0.000   0.000 |   -6.151  -6.864  18.231
+ 285B   0.00001424 0.11  0.211 -1276.381716  156.0   5.173   5.033 |    0.000   0.000   0.000   0.000 |   -6.151  -6.864  16.058
+ 286B   0.00002100 0.10  0.211 -1276.381717  156.0   5.173   5.033 |    0.000   0.000   0.000  -0.000 |   -6.151  -6.864  18.958
+ 287B   0.00001641 0.11  0.211 -1276.381715  156.0   5.173   5.033 |    0.000   0.000   0.000  -0.000 |   -6.151  -6.864  20.350
+ 288B   0.00001050 0.13  0.211 -1276.381714  156.0   5.173   5.033 |    0.000   0.000   0.000  -0.000 |   -6.151  -6.864  21.733
+ 289B   0.00000787 0.14  0.211 -1276.381713  156.0   5.173   5.033 |    0.000   0.000   0.000   0.000 |   -6.151  -6.864  16.547
+ 290B   0.00000787 0.16  0.211 -1276.381713  156.0   5.173   5.033 |    0.000   0.000   0.000  -0.000 |   -6.151  -6.864  16.919
+ 291B   0.00002944 0.10  0.211 -1276.381718  156.0   5.173   5.033 |    0.000   0.000   0.000  -0.000 |   -6.151  -6.864  16.824
+ 292B   0.00000788 0.11  0.211 -1276.381713  156.0   5.173   5.033 |    0.000   0.000   0.000  -0.000 |   -6.151  -6.864  19.989
+ 293B   0.00001070 0.10  0.211 -1276.381715  156.0   5.173   5.033 |    0.000   0.000   0.000   0.000 |   -6.151  -6.864  17.617
+ 294B   0.00001131 0.10  0.211 -1276.381712  156.0   5.173   5.033 |    0.000   0.000   0.000  -0.000 |   -6.151  -6.864  18.705
+ 295B   0.00001208 0.10  0.211 -1276.381715  156.0   5.173   5.033 |    0.000   0.000   0.000  -0.000 |   -6.151  -6.864  15.127
+ 296B   0.00001393 0.10  0.211 -1276.381715  156.0   5.173   5.033 |    0.000  -0.000   0.000  -0.000 |   -6.151  -6.864  19.581
+ 297B   0.00000789 0.11  0.211 -1276.381715  156.0   5.173   5.033 |    0.000  -0.000   0.000  -0.000 |   -6.151  -6.864  19.913
+ 298B   0.00000797 0.10  0.211 -1276.381716  156.0   5.173   5.033 |    0.000   0.000   0.000   0.000 |   -6.151  -6.864  21.255
+ 299B   0.00000897 0.10  0.211 -1276.381720  156.0   5.173   5.033 |    0.000  -0.000   0.000   0.000 |   -6.151  -6.864  21.589
+ 300B   0.00000692 0.11  0.211 -1276.381725  156.0   5.173   5.033 |    0.000  -0.000   0.000   0.000 |   -6.151  -6.864  16.586
+ 301B   0.00000665 0.13  0.211 -1276.381725  156.0   5.173   5.033 |    0.000   0.000   0.000  -0.000 |   -6.151  -6.864  21.875
+ 302B   0.00001252 0.10  0.211 -1276.381733  156.0   5.173   5.033 |    0.000  -0.000   0.000  -0.000 |   -6.151  -6.864  21.081
+ 303B   0.00000612 0.11  0.211 -1276.381738  156.0   5.173   5.033 |    0.000   0.000   0.000   0.000 |   -6.151  -6.864  30.780
+ 304B   0.00001666 0.10  0.211 -1276.381752  156.0   5.173   5.033 |    0.000   0.000   0.000   0.000 |   -6.151  -6.864  17.944
+ 305B   0.00001549 0.11  0.211 -1276.381758  156.0   5.173   5.033 |    0.000  -0.000   0.000  -0.000 |   -6.151  -6.864  16.184
+ 306B   0.00000983 0.13  0.211 -1276.381755  156.0   5.173   5.033 |    0.000  -0.000   0.000  -0.000 |   -6.151  -6.864  16.143
+ 307B   0.00000841 0.14  0.211 -1276.381751  156.0   5.173   5.033 |    0.000   0.000   0.000  -0.000 |   -6.151  -6.864  20.250
+ 308B   0.00000610 0.16  0.211 -1276.381759  156.0   5.173   5.033 |    0.000   0.000   0.000   0.000 |   -6.151  -6.864  20.315
+ 309B   0.00000340 0.18  0.211 -1276.381759  156.0   5.173   5.033 |    0.000  -0.000   0.000  -0.000 |   -6.151  -6.864  17.158
+ 310B   0.00000759 0.10  0.211 -1276.381761  156.0   5.173   5.033 |    0.000   0.000   0.000   0.000 |   -6.151  -6.864  16.894
+ 311B   0.00000352 0.11  0.211 -1276.381759  156.0   5.173   5.033 |    0.000   0.000   0.000  -0.000 |   -6.151  -6.864  17.780
+ 312B   0.00000207 0.13  0.211 -1276.381760  156.0   5.173   5.033 |    0.000   0.000   0.000  -0.000 |   -6.151  -6.864  19.526
+ 313B   0.00000234 0.10  0.211 -1276.381759  156.0   5.173   5.033 |    0.000  -0.000   0.000  -0.000 |   -6.151  -6.864  17.569
+ 314B   0.00000204 0.11  0.211 -1276.381760  156.0   5.173   5.033 |    0.000  -0.000   0.000  -0.000 |   -6.151  -6.864  17.678
+ 315B   0.00000363 0.10  0.211 -1276.381760  156.0   5.173   5.033 |    0.000  -0.000   0.000   0.000 |   -6.151  -6.864  19.527
+ 316B   0.00000356 0.11  0.211 -1276.381759  156.0   5.173   5.033 |    0.000  -0.000   0.000  -0.000 |   -6.151  -6.864  15.099
+ 317B   0.00000224 0.13  0.211 -1276.381759  156.0   5.173   5.033 |    0.000  -0.000   0.000  -0.000 |   -6.151  -6.864  19.345
+ 318B   0.00000254 0.10  0.211 -1276.381759  156.0   5.173   5.033 |    0.000   0.000   0.000  -0.000 |   -6.151  -6.864  19.837
+ 319B   0.00000210 0.11  0.211 -1276.381758  156.0   5.173   5.033 |    0.000   0.000   0.000  -0.000 |   -6.151  -6.864  21.899
+ 320B   0.00000238 0.10  0.211 -1276.381758  156.0   5.173   5.033 |    0.000   0.000   0.000  -0.000 |   -6.151  -6.864  22.856
+ 321B   0.00000212 0.11  0.211 -1276.381758  156.0   5.173   5.033 |    0.000  -0.000   0.000  -0.000 |   -6.151  -6.864  23.056
+ 322B   0.00000192 0.13  0.211 -1276.381757  156.0   5.173   5.033 |    0.000  -0.000   0.000   0.000 |   -6.151  -6.864  17.205
+ 323B   0.00000178 0.14  0.211 -1276.381755  156.0   5.173   5.033 |    0.000  -0.000   0.000  -0.000 |   -6.151  -6.864  17.259
+ 324B   0.00000414 0.10  0.211 -1276.381753  156.0   5.173   5.033 |    0.000  -0.000   0.000  -0.000 |   -6.151  -6.864  17.372
+ 325B   0.00000320 0.11  0.211 -1276.381753  156.0   5.173   5.033 |    0.000  -0.000   0.000  -0.000 |   -6.151  -6.864  15.245
+ 326B   0.00000363 0.10  0.211 -1276.381753  156.0   5.173   5.033 |    0.000  -0.000   0.000  -0.000 |   -6.151  -6.864  17.536
+ 327B   0.00000215 0.11  0.211 -1276.381752  156.0   5.173   5.033 |    0.000  -0.000   0.000  -0.000 |   -6.151  -6.864  17.669
+ 328B   0.00000403 0.10  0.211 -1276.381750  156.0   5.173   5.033 |    0.000  -0.000   0.000  -0.000 |   -6.151  -6.864  17.287
+ 329B   0.00000265 0.11  0.211 -1276.381749  156.0   5.173   5.033 |    0.000  -0.000   0.000  -0.000 |   -6.151  -6.864  22.392
+ 330B   0.00000278 0.10  0.211 -1276.381749  156.0   5.173   5.033 |    0.000   0.000   0.000  -0.000 |   -6.151  -6.864  16.619
+ 331B   0.00000343 0.10  0.211 -1276.381748  156.0   5.173   5.033 |    0.000   0.000   0.000  -0.000 |   -6.151  -6.864  17.825
+ 332B   0.00000287 0.11  0.211 -1276.381747  156.0   5.173   5.033 |    0.000  -0.000   0.000  -0.000 |   -6.151  -6.864  19.092
+ 333B   0.00000318 0.10  0.211 -1276.381747  156.0   5.173   5.033 |    0.000  -0.000   0.000  -0.000 |   -6.151  -6.864  25.962
+ 334B   0.00000318 0.10  0.211 -1276.381746  156.0   5.173   5.033 |    0.000   0.000   0.000  -0.000 |   -6.151  -6.864  24.116
+ 335B   0.00000300 0.11  0.211 -1276.381746  156.0   5.173   5.033 |    0.000   0.000   0.000  -0.000 |   -6.151  -6.864  19.880
+ 336B   0.00000207 0.13  0.211 -1276.381745  156.0   5.173   5.033 |    0.000   0.000   0.000  -0.000 |   -6.151  -6.864  18.917
+ 337B   0.00000186 0.14  0.211 -1276.381747  156.0   5.173   5.033 |    0.000  -0.000   0.000  -0.000 |   -6.151  -6.864  19.874
+ 338B   0.00000209 0.10  0.211 -1276.381745  156.0   5.173   5.033 |    0.000  -0.000   0.000  -0.000 |   -6.151  -6.864  19.495
+ 339B   0.00000186 0.11  0.211 -1276.381744  156.0   5.173   5.033 |    0.000  -0.000   0.000  -0.000 |   -6.151  -6.864  18.196
+ 340B   0.00000113 0.13  0.211 -1276.381745  156.0   5.173   5.033 |    0.000  -0.000   0.000  -0.000 |   -6.151  -6.864  17.466
+ 341B   0.00000115 0.10  0.211 -1276.381745  156.0   5.173   5.033 |    0.000  -0.000   0.000  -0.000 |   -6.151  -6.864  22.169
+ 342B   0.00000185 0.10  0.211 -1276.381744  156.0   5.173   5.033 |    0.000  -0.000   0.000  -0.000 |   -6.151  -6.864  19.829
+ 343B   0.00000196 0.10  0.211 -1276.381744  156.0   5.173   5.033 |    0.000  -0.000   0.000  -0.000 |   -6.151  -6.864  16.948
+ 344B   0.00000183 0.11  0.211 -1276.381744  156.0   5.173   5.033 |    0.000  -0.000   0.000  -0.000 |   -6.151  -6.864  18.380
+ 345B   0.00000182 0.13  0.211 -1276.381744  156.0   5.173   5.033 |    0.000  -0.000   0.000  -0.000 |   -6.151  -6.864  18.603
+ 346B   0.00000303 0.10  0.211 -1276.381744  156.0   5.173   5.033 |    0.000  -0.000   0.000  -0.000 |   -6.151  -6.864  18.288
+ 347B   0.00000131 0.11  0.211 -1276.381744  156.0   5.173   5.033 |    0.000  -0.000   0.000  -0.000 |   -6.151  -6.864  19.085
+ 348B   0.00000145 0.10  0.211 -1276.381744  156.0   5.173   5.033 |    0.000   0.000   0.000  -0.000 |   -6.151  -6.864  20.322
+ 349B   0.00000129 0.11  0.211 -1276.381744  156.0   5.173   5.033 |    0.000  -0.000   0.000   0.000 |   -6.151  -6.864  17.614
+ 350B   0.00000375 0.10  0.211 -1276.381745  156.0   5.173   5.033 |    0.000   0.000   0.000  -0.000 |   -6.151  -6.864  19.627
+ 351B   0.00000133 0.11  0.211 -1276.381744  156.0   5.173   5.033 |    0.000  -0.000   0.000  -0.000 |   -6.151  -6.864  17.854
+ 352B   0.00000136 0.10  0.211 -1276.381744  156.0   5.173   5.033 |    0.000   0.000   0.000   0.000 |   -6.151  -6.864  17.593
+ 353B   0.00000134 0.11  0.211 -1276.381744  156.0   5.173   5.033 |    0.000   0.000   0.000  -0.000 |   -6.151  -6.864  15.971
+ 354B   0.00000138 0.10  0.211 -1276.381745  156.0   5.173   5.033 |    0.000  -0.000   0.000  -0.000 |   -6.151  -6.864  16.986
+ 355B   0.00000133 0.11  0.211 -1276.381745  156.0   5.173   5.033 |    0.000   0.000   0.000   0.000 |   -6.151  -6.864  24.310
+ 356B   0.00000130 0.13  0.211 -1276.381745  156.0   5.173   5.033 |    0.000   0.000   0.000  -0.000 |   -6.151  -6.864  17.091
+ 357B   0.00000154 0.10  0.211 -1276.381747  156.0   5.173   5.033 |    0.000   0.000   0.000   0.000 |   -6.151  -6.864  17.909
+ 358B   0.00000102 0.11  0.211 -1276.381747  156.0   5.173   5.033 |    0.000   0.000   0.000  -0.000 |   -6.151  -6.864  27.388
+ 359B   0.00000199 0.10  0.211 -1276.381747  156.0   5.173   5.033 |    0.000  -0.000   0.000   0.000 |   -6.151  -6.864  19.646
+ 360B   0.00000266 0.10  0.211 -1276.381750  156.0   5.173   5.033 |    0.000  -0.000   0.000   0.000 |   -6.151  -6.864  24.979
+ 361B   0.00000174 0.11  0.211 -1276.381749  156.0   5.173   5.033 |    0.000  -0.000   0.000   0.000 |   -6.151  -6.864  17.795
+ 362B   0.00000188 0.10  0.211 -1276.381750  156.0   5.173   5.033 |    0.000  -0.000   0.000   0.000 |   -6.151  -6.864  17.693
+ 363B   0.00000209 0.10  0.211 -1276.381751  156.0   5.173   5.033 |    0.000  -0.000   0.000   0.000 |   -6.151  -6.864  20.598
+ 364B   0.00000119 0.11  0.211 -1276.381751  156.0   5.173   5.033 |    0.000   0.000   0.000   0.000 |   -6.151  -6.864  20.366
+ 365B   0.00000094 0.13  0.211 -1276.381752  156.0   5.173   5.033 |    0.000  -0.000   0.000   0.000 |   -6.151  -6.864  18.619
+ 366B   0.00000071 0.14  0.211 -1276.381752  156.0   5.173   5.033 |    0.000   0.000   0.000   0.000 |   -6.151  -6.864  19.783
+ 367B   0.00000065 0.16  0.211 -1276.381752  156.0   5.173   5.033 |    0.000   0.000   0.000   0.000 |   -6.151  -6.864  19.361
+ 368B   0.00000090 0.10  0.211 -1276.381752  156.0   5.173   5.033 |    0.000  -0.000   0.000   0.000 |   -6.151  -6.864  21.840
+ 369B   0.00000045 0.11  0.211 -1276.381752  156.0   5.173   5.033 |    0.000   0.000   0.000   0.000 |   -6.151  -6.864  24.419
+ 370B   0.00000070 0.10  0.211 -1276.381752  156.0   5.173   5.033 |    0.000  -0.000   0.000   0.000 |   -6.151  -6.864  17.399
+ 371B   0.00000039 0.11  0.211 -1276.381752  156.0   5.173   5.033 |    0.000  -0.000   0.000  -0.000 |   -6.151  -6.864  23.621
+ 372B   0.00000060 0.10  0.211 -1276.381752  156.0   5.173   5.033 |    0.000  -0.000   0.000  -0.000 |   -6.151  -6.864  26.843
+ 373B   0.00000044 0.11  0.211 -1276.381752  156.0   5.173   5.033 |    0.000  -0.000   0.000   0.000 |   -6.151  -6.864  22.412
+ 374B   0.00000042 0.13  0.211 -1276.381752  156.0   5.173   5.033 |    0.000  -0.000   0.000  -0.000 |   -6.151  -6.864  19.020
+ 375B   0.00000042 0.10  0.211 -1276.381752  156.0   5.173   5.033 |    0.000  -0.000   0.000  -0.000 |   -6.151  -6.864  16.057
+ 376B   0.00000043 0.10  0.211 -1276.381752  156.0   5.173   5.033 |    0.000  -0.000   0.000   0.000 |   -6.151  -6.864  18.412
+ 377B   0.00000055 0.10  0.211 -1276.381752  156.0   5.173   5.033 |    0.000  -0.000   0.000   0.000 |   -6.151  -6.864  21.109
+ 378B   0.00000046 0.11  0.211 -1276.381752  156.0   5.173   5.033 |    0.000  -0.000   0.000   0.000 |   -6.151  -6.864  19.775
+ 379B   0.00000044 0.13  0.211 -1276.381752  156.0   5.173   5.033 |    0.000  -0.000   0.000   0.000 |   -6.151  -6.864  19.321
+ 380B   0.00000048 0.10  0.211 -1276.381752  156.0   5.173   5.033 |    0.000  -0.000   0.000   0.000 |   -6.151  -6.864  19.458
+ 381B   0.00000041 0.11  0.211 -1276.381752  156.0   5.173   5.033 |    0.000   0.000   0.000   0.000 |   -6.151  -6.864  21.254
+ 382B   0.00000040 0.13  0.211 -1276.381752  156.0   5.173   5.033 |    0.000  -0.000   0.000  -0.000 |   -6.151  -6.864  22.236
+ 383B   0.00000047 0.10  0.211 -1276.381752  156.0   5.173   5.033 |    0.000  -0.000   0.000   0.000 |   -6.151  -6.864  28.349
+ 384B   0.00000037 0.11  0.211 -1276.381752  156.0   5.173   5.033 |    0.000  -0.000   0.000   0.000 |   -6.151  -6.864  47.646
+ 385B   0.00000044 0.10  0.211 -1276.381751  156.0   5.173   5.033 |    0.000   0.000   0.000   0.000 |   -6.151  -6.864  18.958
+ 386B   0.00000072 0.10  0.211 -1276.381751  156.0   5.173   5.033 |    0.000  -0.000   0.000  -0.000 |   -6.151  -6.864  24.751
+ 387B   0.00000047 0.11  0.211 -1276.381751  156.0   5.173   5.033 |    0.000   0.000   0.000   0.000 |   -6.151  -6.864  21.762
+ 388B   0.00000061 0.10  0.211 -1276.381751  156.0   5.173   5.033 |    0.000   0.000   0.000   0.000 |   -6.151  -6.864  18.229
+ 389B   0.00000067 0.10  0.211 -1276.381750  156.0   5.173   5.033 |    0.000   0.000   0.000   0.000 |   -6.151  -6.864  24.979
+ 390B   0.00000046 0.11  0.211 -1276.381750  156.0   5.173   5.033 |    0.000  -0.000   0.000  -0.000 |   -6.151  -6.864  22.001
+ 391B   0.00000042 0.13  0.211 -1276.381750  156.0   5.173   5.033 |    0.000  -0.000   0.000   0.000 |   -6.151  -6.864  18.775
+ 392B   0.00000045 0.10  0.211 -1276.381750  156.0   5.173   5.033 |    0.000  -0.000   0.000   0.000 |   -6.151  -6.864  18.466
+ 393B   0.00000040 0.11  0.211 -1276.381750  156.0   5.173   5.033 |    0.000  -0.000   0.000   0.000 |   -6.151  -6.864  18.134
+ 394B   0.00000042 0.10  0.211 -1276.381750  156.0   5.173   5.033 |    0.000  -0.000   0.000   0.000 |   -6.151  -6.864  24.617
+ 395B   0.00000032 0.11  0.211 -1276.381750  156.0   5.173   5.033 |    0.000  -0.000   0.000   0.000 |   -6.151  -6.864  19.371
+ 396B   0.00000044 0.10  0.211 -1276.381749  156.0   5.173   5.033 |    0.000  -0.000   0.000  -0.000 |   -6.151  -6.864  19.414
+ 397B   0.00000031 0.11  0.211 -1276.381749  156.0   5.173   5.033 |    0.000  -0.000   0.000  -0.000 |   -6.151  -6.864  20.046
+ 398B   0.00000061 0.10  0.211 -1276.381749  156.0   5.173   5.033 |    0.000  -0.000   0.000  -0.000 |   -6.151  -6.864  19.577
+ 399B   0.00000027 0.11  0.211 -1276.381749  156.0   5.173   5.033 |    0.000  -0.000   0.000  -0.000 |   -6.151  -6.864  22.063
+ 400B   0.00000026 0.13  0.211 -1276.381749  156.0   5.173   5.033 |    0.000   0.000   0.000  -0.000 |   -6.151  -6.864  30.779
+ 401B   0.00000034 0.10  0.211 -1276.381749  156.0   5.173   5.033 |    0.000  -0.000   0.000  -0.000 |   -6.151  -6.864   0.000
+  ----------------------------------------------------------------------------------------------------------------------------------
+  *   iterations limit interrupt after 401 steps   si=     0.0000003365 ho= -1 tho=  0
+  ----------------------------------------------------------------------------------------------------------------------------------
+  Total CPU time= 127.968 minutes
 
- ERRORS IN HFBTHO_SOLVER
- error_flag= 1   STOP: kl=zero, no states below pwi!!!                      
+  Writing to wel_file: s092_064.hel
+ __________________________________  
+  The tape s092_064.hel recorded:     
+  nucname,npr,ngh,ngl,n00,nb,nt      
+  b0,beta0,si,etot,rms,bet,xmix      
+  pairing:     CpV0,CpV1,pwi         
+  delta:       del,ept               
+  lambda:      ala,ala2,alast,tz     
+  asymptotic:  varmas,ass,skass      
+  ntx,nb,nhhdim,id,N_rz,n_r,n_z      
+  Omega2,Sigma2,Parity,Lambda        
+  matrices(inbro):    hh,de          
+  *all blocking candidates           
+ __________________________________  
+
+
+  NB! From expect (UNPROJECTED RESULTS)
+
+  pairing: CpV0,CpV1,...           0.100000       0.100000       1.000000       1.000000
+  forces:   UNE1                          
+
+
+                             neutrons         protons         total
+  Requested part.numbs.      92.000000      64.000000     156.000000
+  UnPj(av) part.numbs .      92.000000      64.000000     156.000000
+  b0, bz, bp ..........       2.130153       2.136882       2.126796
+
+  lambda (ala) ........      -6.150575      -6.864398
+  Lambda (alast) ......      -6.150575      -6.864398
+  delta(n,p), pwi .....       0.000000      -0.000000      60.000000
+  pairing energy ......       0.000000       0.000000       0.000000
+
+  rms-radius ..........       5.172743       5.032988       5.115869
+  charge-radius, r0 ...                      5.096172       6.459855
+  deformation beta2....       0.199987       0.226689       0.210590
+  dipole moment[fm] ...       0.000000       0.000000       0.000000
+  quadrupole moment[b]        6.210720       4.636301      10.847021
+  octupole moment .....       0.000000       0.000000       0.000000
+  hexadecapole moment .       0.248047       0.170748       0.418794
+  q5 ..................       0.000000       0.000000       0.000000
+  q6 ..................       0.031508       0.031636       0.063143
+  q7 ..................       0.000000       0.000000       0.000000
+  q8 ..................       0.010054       0.006011       0.016065
+
+  <r^0> [fm^0] ........            1.000000            1.000000            1.000000
+  <r^2> [fm^2] ........           26.757269           25.330964           26.172118
+  <r^4> [fm^4] ........          942.161830          822.312304          892.992794
+  <r^6> [fm^6] ........        40009.736676        31352.953181        36458.235755
+  <r^8> [fm^8] ........      1994695.233540      1361453.502340      1734903.754074
+
+  kinetic energy ......    1814.367353    1079.073274    2893.440627
+  volume energy .......                                 -4816.519193
+        rho_tau .......                                   -39.194563
+        rho_rho .......                                 -4777.324630
+  surface energy ......                                   177.948715
+   rho_DELTA_rho ......                                   177.948715
+   (NABLA_rho)^2 ......                                     0.000000
+  spin-orbit energy ...                                   -56.850426
+        rho_NABLA_J ...                                   -56.850426
+        NABLA_rho_J ...                                     0.000000
+  coulomb energy ......                                   525.598528
+          direct ......                                   550.213021
+          exchange ....                                   -24.614493
+  tensor energy .......                                     0.000000
+  direct Hartree E  ...                                     0.000000
+  Extra E .............                                     0.000000
+  External field E ....                                     0.000000
+  Entropy .............       2.612603       0.452371       3.064974
+
+  tEnergy: ehfb (qp)...                                 -1276.381749
+
+  Calculated but not added corrections 
+====================================
+  cmc-diagonal part ...       0.000000       0.000000       0.000000
+  cmc-hfb .............       0.000000       0.000000       0.000000
+  cranking rot corr ...       0.000000       0.000000       0.000000
+
+  SQUJ ................       0.000000       0.000000       0.000000
+  CRAN x 4 ............       0.000000       0.000000       0.000000
+  Rigit Body ..........       0.000000       0.000000       0.000000
+
+
+   Blocking candidates are:
+   neutron eqpmin=   4.2650954307253797E-002  pwiblo=   2.0016019225635890     
+    num=   1 block=   1 state=   1     1 Eqp=   0.04265095  (1-2N)E=  -0.04265095  Ovlp=   0.53132977  1+[ 6, 4, 0]
+    num=   2 block=   6 state=   1   321 Eqp=   0.04664095  (1-2N)E=   0.04664095  Ovlp=   0.59891437  5-[ 5, 1, 2]
+    num=   3 block=   3 state=   1   142 Eqp=   0.20009122  (1-2N)E=   0.20009122  Ovlp=   0.58514328  3+[ 6, 5, 1]
+    num=   4 block=   4 state=   1   203 Eqp=   0.32475058  (1-2N)E=  -0.32475058  Ovlp=   0.69028825  3-[ 5, 3, 2]
+    num=   5 block=   2 state=   1    70 Eqp=   0.67487234  (1-2N)E=   0.67487234  Ovlp=   0.60470559  1-[ 5, 2, 1]
+    num=   6 block=   5 state=   1   267 Eqp=   0.86734722  (1-2N)E=   0.86734722  Ovlp=   0.73634017  5+[ 6, 4, 2]
+    num=   7 block=   6 state=   2   322 Eqp=   0.88719467  (1-2N)E=   0.88719467  Ovlp=   0.71965963  5-[ 5, 2, 3]
+    num=   8 block=   4 state=   2   204 Eqp=   1.21575660  (1-2N)E=  -1.21575660  Ovlp=   0.58315506  3-[ 5, 4, 1]
+    num=   9 block=   2 state=   2    71 Eqp=   1.43422541  (1-2N)E=  -1.43422541  Ovlp=   0.68155650  1-[ 5, 4, 1]
+    num=  10 block=   8 state=   1   424 Eqp=   1.59739702  (1-2N)E=   1.59739702  Ovlp=   0.75379568  7-[ 5, 0, 3]
+    num=  11 block=   7 state=   1   377 Eqp=   1.70066785  (1-2N)E=   1.70066785  Ovlp=   0.84328994  7+[ 6, 3, 3]
+    num=  12 block=   2 state=   3    72 Eqp=   1.95404808  (1-2N)E=   1.95404808  Ovlp=   0.75116423  1-[ 5, 1, 0]
+
+   Blocking candidates are:
+   proton  eqpmin=  0.18643193275735825       pwiblo=   2.0016019225635890     
+    num=   1 block=   4 state=   1   177 Eqp=   0.18643193  (1-2N)E=  -0.18643193  Ovlp=   0.63514140  3-[ 5, 4, 1]
+    num=   2 block=   7 state=   1   317 Eqp=   0.18808431  (1-2N)E=   0.18808431  Ovlp=   0.96370099  7+[ 4, 0, 4]
+    num=   3 block=   6 state=   1   275 Eqp=   0.36492136  (1-2N)E=   0.36492136  Ovlp=   0.79770385  5-[ 5, 3, 2]
+    num=   4 block=   1 state=   1     1 Eqp=   0.47502940  (1-2N)E=   0.47502940  Ovlp=   0.82246164  1+[ 4, 1, 1]
+    num=   5 block=   2 state=   1    65 Eqp=   0.60925104  (1-2N)E=  -0.60925104  Ovlp=   0.53977767  1-[ 5, 3, 0]
+    num=   6 block=   3 state=   1   121 Eqp=   0.64085708  (1-2N)E=  -0.64085708  Ovlp=   0.83092340  3+[ 4, 1, 1]
+    num=   7 block=   5 state=   1   226 Eqp=   0.65064185  (1-2N)E=   0.65064185  Ovlp=   0.90615114  5+[ 4, 0, 2]
+    num=   8 block=   5 state=   2   227 Eqp=   1.11461655  (1-2N)E=  -1.11461655  Ovlp=   0.91516947  5+[ 4, 1, 3]
+    num=   9 block=   8 state=   1   359 Eqp=   1.33764731  (1-2N)E=   1.33764731  Ovlp=   0.89829717  7-[ 5, 2, 3]
+    num=  10 block=   3 state=   2   122 Eqp=   2.18181194  (1-2N)E=   2.18181194  Ovlp=   0.91230229  3+[ 4, 0, 2]
+
+
+
+ HFBTHO_SOLVER ended without errors
 
